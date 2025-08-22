@@ -53,7 +53,7 @@
 </script>
 
 <svelte:head>
-  <base href="/newo-restaurants/">
+  <base href="/newo-ai/">
 </svelte:head>
 
 
