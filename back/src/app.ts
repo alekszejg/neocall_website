@@ -13,7 +13,7 @@ app.use((err: unknown, req: Request, res: Response, next: NextFunction) => {
 });
 
 // Example route
-app.post("/submit-form", (req: Request, res: Response) => {
+app.post("/api/submit-form", (req: Request, res: Response) => {
   const { name, email, website, company } = req.body;
   console.log("Form submitted:", { name, email, website, company });
 

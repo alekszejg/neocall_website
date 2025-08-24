@@ -8,8 +8,15 @@
     e.preventDefault();
 
     const payload = { name, email, website, company };
-    console.log("Sending form data:", payload); // tmp test
-  }
+    const res = await fetch("/api/submit-form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+    console.log("Response:", data);
+    }
 </script>
 
 <section class="lpv3 finance-contact" id="finance-contact">
