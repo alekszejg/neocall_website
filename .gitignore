@@ -1,6 +1,8 @@
 /front/node_modules
 /back/node_modules
 
+/back/src/token.json
+
 # Output
 /front/.output
 /front/.vercel
