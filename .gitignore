@@ -1,12 +1,13 @@
-node_modules
+/front/node_modules
+/back/node_modules
 
 # Output
-.output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
-/build
+/front/.output
+/front/.vercel
+/front/.netlify
+/front/.wrangler
+/front/.svelte-kit
+/front/build
 
 # OS
 .DS_Store
