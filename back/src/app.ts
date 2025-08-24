@@ -1,4 +1,5 @@
 import express, { Request, Response, NextFunction  } from "express";
+import { oAuth2Client } from './auth';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -12,7 +13,21 @@ app.use((err: unknown, req: Request, res: Response, next: NextFunction) => {
   next();
 });
 
-// Example route
+
+app.get('/oauth/callback', async (req, res) => {
+  const code = req.query.code as string;
+  if (!code) return res.status(400).send('No code returned');
+
+  try {
+    const { tokens } = await oAuth2Client.getToken(code);
+    console.log('Tokens:', tokens); 
+    res.send('Authorization successful! Check your terminal for tokens.');
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Error retrieving tokens');
+  }
+});
+
 app.post("/api/submit-form", (req: Request, res: Response) => {
   const { name, email, website, company } = req.body;
   console.log("Form submitted:", { name, email, website, company });
