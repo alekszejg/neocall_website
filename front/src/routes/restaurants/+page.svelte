@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import Navbar from '$lib/components/navbar.svelte';
+  import Form from '$lib/components/form.svelte';
   import Footer from '$lib/components/footer.svelte';
 
   onMount(() => {
@@ -108,13 +109,8 @@
                         <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
                     </div>
                     <div class="lpv3-pricing-section__form-row-error"></div> -->
-                    <div class="lpv3-api-form__row">
-                        <a class="lpv3-btn" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
-                        <a class="lpv3-btn lpv3-btn--filled" data-link="https://agent.newo.ai/" data-utms={JSON.stringify({ utm1: 'train', utm2: 'restaurant' })} href="#create-ai-employee-in-3-minutes">Train your AI Agent</a>
-                    </div>
-                    <div class="lpv3-api-form__row">
-                        <span></span>
-                        <span>3 minutes to create your AI Agent. FREE.</span>
+                    <div class="block">
+                        <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
                     </div>
                 </div>
             </div>
@@ -126,13 +122,8 @@
                         <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
                     </div>
                     <div class="lpv3-pricing-section__form-row-error"></div> -->
-                    <div class="lpv3-api-form__row">
-                        <a class="lpv3-btn" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
-                        <a class="lpv3-btn lpv3-btn--filled" data-link="https://agent.newo.ai/" data-utms={JSON.stringify({ utm1: 'train', utm2: 'restaurant' })} href="#create-ai-employee-in-3-minutes">Train your AI Agent</a>
-                    </div>
-                    <div class="lpv3-api-form__row">
-                        <span></span>
-                        <span>3 minutes to create your AI Agent. FREE.</span>
+                    <div class="block">
+                        <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
                     </div>
                 </div>
             </div>
@@ -355,13 +346,8 @@
                     <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
                 </div>
                 <div class="lpv3-pricing-section__form-row-error"></div>
-                <div class="lpv3-api-form__row">
-                    <a class="lpv3-btn" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
-                    <a class="lpv3-btn lpv3-btn--filled lpv3-api-form--submit" data-link="https://agent.newo.ai/" data-utms={JSON.stringify({ utm1: 'train', utm2: 'restaurant' })} href="">Train your AI on Google Maps</a>
-                </div>
-                <div class="lpv3-api-form__row">
-                    <span></span>
-                    <span>3 minutes to create your AI Agent. FREE.</span>
+                <div class="block px-[10%]">
+                    <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
                 </div>
             </div>
             </div>
@@ -405,13 +391,8 @@
                     <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
                 </div>
                 <div class="lpv3-pricing-section__form-row-error"></div>
-                <div class="lpv3-api-form__row">
-                    <a class="lpv3-btn" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
-                    <a class="lpv3-btn lpv3-btn--filled lpv3-api-form--submit" data-utms={JSON.stringify({ utm1: 'train', utm2: 'restaurant' })} data-link="https://agent.newo.ai/" href="">Train your AI on Google Maps</a>
-                </div>
-                <div class="lpv3-api-form__row">
-                    <span></span>
-                    <span>3 minutes to create your AI Agent. FREE.</span>
+                <div class="block px-[10%]">
+                    <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
                 </div>
             </div>
             </div>
@@ -476,32 +457,6 @@
                                                     <div class="lpv3-pricing-section__top-content-footer">
                         <strong>Tip:</strong> Not ready to hand all your calls to AI? Start small. Capture after-hours calls youre already missing. No risk.                    </div>
                             </div>
-            <div class="lpv3-pricing-section__form-content">
-                <div class="lpv3-pricing-section__form-text">
-                    <div>
-<h2>The agent learns on its own. It takes 3 minutes.</h2>
-</div>
-<p>Its pure magic. Find your restaurant on Google Maps or provide your website link. The agent learns and creates itself. That simple, and its FREE. In just 3 minutes, youll have a new AI Host ready to go.</p>
-                </div>
-                <div class="lpv3-pricing-section__forms">
-                    <div class="lpv3-pricing-section__form lpv3-simple-steps__form">
-                        <div class="lpv3-pricing-section__row-input">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" class="lpv3-pricing-section__icon" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2025/01/globe.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2025/01/globe.png" class="lpv3-pricing-section__icon" alt=""></noscript>
-                            <input type="text" placeholder="Enter your business URL" data-utms="">
-                        </div>
-                        <div class="lpv3-pricing-section__form-row-error"></div>
-                        <a class="lpv3-btn lpv3-btn--filled lpv3-simple-steps__web-url--trigger" data-utms={JSON.stringify({ utm1: 'train', utm2: 'restaurant' })} href="#">Train your AI on the Website</a>
-                    </div>
-                    <div class="lpv3-pricing-section__form lpv3-api-form">
-                        <div class="lpv3-pricing-section__row-input">
-                            <div class="lpv3-pricing-section__row-input--border"></div>
-                            <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
-                        </div>
-                        <div class="lpv3-pricing-section__form-row-error"></div>
-                        <a class="lpv3-btn lpv3-btn--filled lpv3-api-form--submit" data-utms={JSON.stringify({ utm1: 'train', utm2: 'restaurant' })} data-link="https://agent.newo.ai/" href="">Train your AI on the Google Maps</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -629,13 +584,8 @@
                     <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
                 </div>
                 <div class="lpv3-pricing-section__form-row-error"></div>
-                <div class="lpv3-api-form__row">
-                    <a class="lpv3-btn" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
-                    <a class="lpv3-btn lpv3-btn--filled lpv3-api-form--submit" data-utms={JSON.stringify({ utm1: 'train', utm2: 'restaurant' })} data-link="https://agent.newo.ai/" href="">Train your AI on Google Maps</a>
-                </div>
-                <div class="lpv3-api-form__row">
-                    <span></span>
-                    <span>3 minutes to create your AI Agent. FREE.</span>
+                <div class="block px-[10%]">
+                    <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
                 </div>
             </div>
                     </div>
@@ -910,21 +860,7 @@
                         </div>
                     </div>
                             </div>
-                            <div class="lpv3-api-form">
-                <div class="lpv3-api-form__input-row">
-                    <div class="lpv3-api-form__input-row--border"></div>
-                    <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
-                </div>
-                <div class="lpv3-pricing-section__form-row-error"></div>
-                <div class="lpv3-api-form__row">
-                    <a class="lpv3-btn" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
-                    <a class="lpv3-btn lpv3-btn--filled lpv3-api-form--submit" data-utms={JSON.stringify({ utm1: 'train', utm2: 'restaurant' })} data-link="https://agent.newo.ai/" href="">Train your AI on Google Maps</a>
-                </div>
-                <div class="lpv3-api-form__row">
-                    <span></span>
-                    <span>3 minutes to create your AI Agent. FREE.</span>
-                </div>
-            </div>
+        <Form />
             </div>
 </section>
 
