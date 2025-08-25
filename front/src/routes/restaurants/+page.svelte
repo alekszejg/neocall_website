@@ -425,43 +425,6 @@
                         </div>
 </section>
 
-
-<section class="lpv3 lpv3-simple-steps" id="create-ai-employee-in-3-minutes">
-    <div class="lpv3-container">
-        <div class="lpv3-simple-steps__inner">
-            <div class="lpv3-pricing-section__top-content">
-                                    <h2 class="lpv3-simple-steps__title">Plug&Play: Simple Steps to Hire Your AI�Host</h2>
-                                                    <div class="lpv3-pricing-section__cards">
-                                                                            <div class="lpv3-info-card lpv3-info-card--number" style="background:#fff0d3">
-                                <span class="lpv3-info-card__number" style="color:#ffd480">1</span>
-                                <div class="lpv3-info-card__content">
-                                    <h4>Find your business</h4>
-<p>Enter your business name and location on Google Maps form below or enter the business URL</p>
-                                </div>
-                            </div>
-                                                                                <div class="lpv3-info-card lpv3-info-card--number" style="background:#fff0d3">
-                                <span class="lpv3-info-card__number" style="color:#ffd480">2</span>
-                                <div class="lpv3-info-card__content">
-                                    <h4>AI analyzes information</h4>
-<p>Our platform automatically reviews information about your business and provisions an AI phone number.</p>
-                                </div>
-                            </div>
-                                                                                <div class="lpv3-info-card lpv3-info-card--number" style="background:#fff0d3">
-                                <span class="lpv3-info-card__number" style="color:#ffd480">3</span>
-                                <div class="lpv3-info-card__content">
-                                    <h4>Set call forwarding</h4>
-<p>Start forwarding calls during non-working hours and when your line is busy.</p>
-                                </div>
-                            </div>
-                                                                        </div>
-                                                    <div class="lpv3-pricing-section__top-content-footer">
-                        <strong>Tip:</strong> Not ready to hand all your calls to AI? Start small. Capture after-hours calls youre already missing. No risk.                    </div>
-                            </div>
-        </div>
-    </div>
-</section>
-
-
 <section class="lpv3 lpv3-about-person">
     <div class="lpv3-container">
                 <div class="lpv3-about-person__inner ">
