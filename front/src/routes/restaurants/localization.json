@@ -1,0 +1,636 @@
+{
+    "hero": {
+        "header": {
+            "en": "Create Your Restaurant AI Host",
+            "de": "Erstellen Sie Ihren KI-Restaurant-Rezeptionist"
+        },
+        "text": {
+            "en": "Get up to $30,000 additional revenue per month.",
+            "de": "Erzielen Sie bis zu 30.000 $ zusätzlichen Umsatz pro Monat."
+        },
+        "partnerships": {
+            "en": "#1 LEADING AI AGENTS FROM THE CREATORS OF AI SOLUTIONS TRUSTED BY 70,000 BUSINESSES.",
+            "de": "#1 FÜHRENDE KI-AGENTEN — VON DEN MACHERN VON AI SOLUTIONS, DENEN 70.000 UNTERNEHMEN VERTRAUEN."
+        },
+        "viewInAction": {
+            "en": "View AI in Action",
+            "de": "Schauen Sie sich die KI in Aktion an"
+        }
+    },
+    "facts": [
+        {
+            "header": {
+                "en": "Did you know…",
+                "de": "Wussten Sie schon…"
+            },
+            "text": [
+                {
+                    "en": "that 40-80% of phone calls go unanswered during rush hours and non-working hours? This means you could be missing out on 60-120 bookings every month.",
+                    "de": "dass 40-80% der Anrufe während Stoßzeiten und außerhalb der Geschäftszeiten unbeantwortet bleiben? Das bedeutet, dass Ihnen jeden Monat 60-120 Buchungen entgehen könnten."
+                }, 
+                {
+                    "en": "The Newo.ai AI Restaurant Host answers all your calls 24/7, ensuring you never miss a revenue opportunity — helping you earn more, effortlessly.",
+                    "de": "Der Newo.ai KI-Restaurant-Rezeptionist nimmt rund um die Uhr all Ihre Anrufe entgegen, sodass Sie keine Umsatzchance verpassen — und hilft Ihnen, mühelos mehr zu verdienen."
+                }
+                
+            ]
+        },
+        {
+            "explanation": {
+                "en": "These AI employees can be \"hired\" instead of being integrated. This means you don't need to change your processes or retrain your staff — your new AI employee will start working 24/7 from day one, generating up to $30,000 in additional revenue per month per location that you were previously missing out on.",
+                "de": "Diese KI-Mitarbeiter können \"eingestellt\" werden, ohne in Ihre Abläufe integriert zu werden. Das bedeutet, dass Sie Ihre Prozesse nicht ändern oder Ihr Personal neu schulen müssen — Ihr neuer KI-Mitarbeiter beginnt ab dem ersten Tag rund um die Uhr zu arbeiten und kann pro Standort bis zu 30.000$ zusätzlichen Umsatz pro Monat erzielen, der Ihnen bisher entgangen ist."
+            },
+            "source": {
+                "en": "David Yang, Co-founder, Newo.ai",
+                "de": "David Yang, Mitgründer von Newo.ai"
+            }
+        }
+    ],
+    "featureInfo1": {
+        "header": {
+            "en": "What Can Your AI Host Do?",
+            "de": "Was kann Ihr KI-Restaurant-Rezeptionist für Sie tun?"
+        },
+        "categories": [
+            {
+                "header": {
+                    "en": "Reservations",
+                    "de": "Reservierungen"
+                },
+                "features": [
+                    {
+                        "en": "Make new reservations in OpenTable, SevenRooms, Resy, Tock, etc Google Maps",
+                        "de": "Neue Reservierungen in OpenTable, SevenRooms, Resy, Tock usw. Google Maps vornehmen"
+                    },
+                    {
+                        "en": "Modify existing bookings",
+                        "de": "Bestehende Buchungen ändern"
+                    },
+                    {
+                        "en": "Handle cancellations",
+                        "de": "Stornierungen bearbeiten"
+                    },
+                    {
+                        "en": "Manage large group bookings",
+                        "de": "Reservierungen für große Gruppen verwalten"
+                    }
+                ]       
+            },
+            {
+                "header": {
+                    "en": "Order Management",
+                    "de": "Bestellmanagement"
+                },
+                "features": [
+                    {
+                        "en": "Take delivery orders",
+                        "de": "Lieferbestellungen annehmen"
+                    },
+                    {
+                        "en": "Process pickup orders",
+                        "de": "Abholbestellungen bearbeiten"
+                    },
+                    {
+                        "en": "Handle catering requests",
+                        "de": "Catering-Anfragen bearbeiten"
+                    },
+                    {
+                        "en": "Coordinate private dining",
+                        "de": "Private Dining koordinieren"
+                    }
+                ]      
+            },
+            {
+                "header": {
+                    "en": "Outbound Calls",
+                    "de": "Ausgehende Anrufe"
+                },
+                "features": [
+                    {
+                        "en": "Invite guests to family brunches",
+                        "de": "Gäste zu Familienbrunches einladen"
+                    },
+                    {
+                        "en": "Track guest preferences and send personalized invitations to tastings",
+                        "de": "Gästepräferenzen verfolgen und personalisierte Einladungen zu Verkostungen senden"
+                    }
+                ]             
+            },
+            {
+                "header": {
+                    "en": "Customer Service",
+                    "de": "Kundenservice"
+                },
+                "features": [
+                    {
+                        "en": "Relay messages to management",
+                        "de": "Nachrichten an das Management weiterleiten"
+                    },
+                    {
+                        "en": "Provide live music and event schedules",
+                        "de": "Live-Musik- und Veranstaltungspläne bereitstellen"
+                    },
+                    {
+                        "feature": {
+                            "en": "Answer common questions, including:",
+                            "de": "Häufige Fragen beantworten, einschließlich:"
+                        },
+                        "examples": [
+                            {
+                                "en": "Business hours",
+                                "de": "Öffnungszeiten"
+                            },
+                            {
+                                "en": "Parking information",
+                                "de": "Parkinformationen"
+                            },
+                            {
+                                "en": "Lost items",
+                                "de": "Verlorene Gegenstände"
+                            }
+                        ]
+                    }
+                ]           
+            },
+            {
+                "header": {
+                    "en": "Reporting",
+                    "de": "Berichte erstellen"
+                },
+                "features": [
+                    {
+                        "en": "Call recordings",
+                        "de": "Anrufe aufzeichnen"
+                    },
+                    {
+                        "en": "Phone conversation and chat summaries and transcripts",
+                        "de": "Telefon- & Chat-Transkripte erstellen"
+                    },
+                    {
+                        "en": "Weekly report on additional secured revenue (ASR), based on orders placed during off-hours and overflow during peak times",
+                        "de": "Wöchentliche Berichte über zusätzlich gesicherten Umsatz (ASR)"
+                    }
+                ]             
+            }
+        ]
+    },
+    "howItWorks": {
+        "header": {
+            "en": "How AI Host Works",
+            "de": "So funktioniert Ihr KI-Restaurant-Rezeptionist"
+        },
+        "steps": [
+            {
+                "header": {
+                    "en": "",
+                    "de": "Gästeanrufe"
+                },
+                "text": [
+                    {
+                        "en": "Your public phone redirects calls to the AI phone we provide. Feel free to redirect calls during non-working hours, overflow calls or all calls.",
+                        "de": "Ihre öffentliche Telefonnummer leitet Anrufe an die von uns bereitgestellte KI-Telefonnummer weiter. Sie können Anrufe außerhalb der Geschäftszeiten, Überlaufanrufe oder alle Anrufe weiterleiten."
+                    },
+                    {
+                        "en": "Online chat, SMS, Instagram, Facebook, WhatsApp, messages — all channels are supported.",
+                        "de": "Online-Chat, SMS, Instagram, Facebook, WhatsApp — alle Kanäle werden unterstützt."
+                    } 
+                ]    
+            },
+            {
+                "header": {
+                    "en": "AI Makes Actual Reservations",
+                    "de": "KI nimmt echte Reservierungen vor"
+                },
+                "text": {
+                    "en": "AI checks available slots in OpenTable, SevenRooms, Resy, Tock. Handles Reservations, Pickup, Delivery Orders, manages large group reservations, handles catering requests, relays messages to management.",
+                    "de": "Die KI prüft verfügbare Zeiten in OpenTable, SevenRooms, Resy und Tock, bearbeitet Reservierungen, Abhol- und Lieferbestellungen, verwaltet Reservierungen für große Gruppen, übernimmt Catering-Anfragen und leitet Nachrichten an das Management weiter."
+                }             
+            },
+            {
+                "header": {
+                    "en": "Booking goes to your Table Booking System",
+                    "de": "Die Buchung geht in Ihr Tischreservierungssystem"
+                },
+                "text": {
+                    "en": "AI Host sends SMS or email notifications to both the guest and your staff.",
+                    "de": "Der KI-Gastgeber sendet SMS- oder E-Mail-Benachrichtigungen sowohl an die Gäste als auch an Ihr Personal."
+                }             
+            }
+        ]
+    },
+    "revenue": {
+        "header": {
+            "en": "Your Additional Revenue",
+            "de": "Ihr zusätzlicher Umsatz"
+        },
+        "text": {
+            "en": "With AI Restaurant Hosts from Newo.ai, most restaurants receive 2-6 additional reservations per day. Some come from bookings made during non-working hours, while others result from overflow during peak hours. These bookings contribute to your additional secured revenue (ASR).",
+            "de": "Mit KI-Restaurant-Rezeptionist von Newo.ai erhalten die meisten Restaurants 2-6 zusätzliche Reservierungen pro Tag. Einige entstehen durch Buchungen außerhalb der Geschäftszeiten, andere durch Überlauf während Stoßzeiten. Diese Reservierungen tragen zu Ihrem zusätzlich gesicherten Umsatz (ASR) bei."
+        },
+        "misc": {
+            "explanation": {
+                "en": "additional revenue per location per year",
+                "de": "Zusätzlicher Umsatz pro Standort und Jahr"
+            },
+            "pricesHeader": {
+                "en": "Prices starting at",
+                "de": "Preise ab"
+            }
+        } 
+    },
+    "reviews": [
+        {
+            "author": {
+                "en": "Bevri Restaurant, Palo Alto, CA",
+                "de": "Bevri Restaurant, Palo Alto, Kalifornien, USA"
+            },
+            "text": {
+                "en": "Our new AI host is a game-changer. It handles calls 24/7, allowing my team to focus on in-house guests. Callers get quick help, staff are less stressed, and guest satisfaction has improved. It paid for itself in just one week.",
+                "de": "Unser neuer KI-Restaurant-Rezeptionist ist ein echter Wendepunkt. Er übernimmt rund um die Uhr alle Anrufe, sodass sich mein Team auf die Gäste vor Ort konzentrieren kann. Anrufer erhalten schnelle Hilfe, das Personal ist weniger gestresst und die Gästezufriedenheit hat sich verbessert. Die Investition hat sich bereits nach nur einer Woche amortisiert."
+            }
+        },
+        {
+            "author": {
+                "en": "Mexican Restaurant, San Jose, CA",
+                "de": "Mexikanisches Restaurant, San Jose, Kalifornien, USA"
+            },
+            "text": {
+                "en": "Our restaurant gets very busy in summer. We are missing about 40-60% of phone calls during regular hours, and up to 80% during rush hours. AI Hostess is a game changer.",
+                "de": "Unser Restaurant ist im Sommer sehr beschäftigt. Wir verpassen etwa 40-60% der Anrufe während der regulären Öffnungszeiten und bis zu 80% während der Stoßzeiten. Die KI-Restaurant-Rezeptionist ist ein echter Wendepunkt."
+            }
+        },
+        {
+            "author": {
+                "en": "Sushi chain, San Francisco, CA",
+                "de": "Sushi-Kette, San Francisco, Kalifornien, USA"
+            },
+            "text": {
+                "en": "... It's really, really, really fascinating. you know, and again, just the full transparency. We did get demos from five other companies and, you know, none of them were even in the ballpark of what you're showing. So, we are really impressed",
+                "de": "... Es ist wirklich, wirklich, wirklich faszinierend. Und, ganz offen gesagt, wir haben Demos von fünf anderen Unternehmen erhalten, und keines von ihnen kam auch nur annähernd an das heran, was ihr zeigt. Wir sind wirklich beeindruckt."
+            }
+        },
+        {
+            "author": {
+                "en": "Fusion Restaurant, San Francisco, CA",
+                "de": "Fusion-Restaurant, San Francisco, Kalifornien, USA"
+            },
+            "text": {
+                "en": "We opened about 6 months ago. Servicing big parties and special events along with selling our catering services is vital for us. AI Hostess picks up 100% calls, helps our guests with their event planning and passes to our human employees for a final human touch. It reduced work stress and actually grew our revenue!",
+                "de": "Wir haben vor etwa sechs Monaten eröffnet. Die Betreuung großer Gruppen und Sonderveranstaltungen sowie der Verkauf unserer Catering-Services ist für uns entscheidend. Die KI-Restaurant-Rezeptionist nimmt 100% der Anrufe entgegen, unterstützt unsere Gäste bei der Veranstaltungsplanung und leitet die Anfragen an unsere menschlichen Mitarbeiter für den finalen persönlichen Touch weiter. Sie reduziert den Arbeitsstress und hat unseren Umsatz tatsächlich gesteigert!"
+            }
+        },
+        {
+            "author": {
+                "en": "Menlo Tavern, Menlo Park CA",
+                "de": "Menlo Tavern, Menlo Park, Kalifornien, USA"
+            },
+            "text": {
+                "en": "I'm thrilled to share my experience using Newo.ai GenAI-powered digital employee at Menlo Tavern. It's been a true game-changer for our restaurant. Since implementing the Newo.ai solution several months ago, we've been able to answer 100% of our incoming phone calls. The real benefit has been freeing up my management team to spend more quality time on the restaurant floor, interacting directly with guests and ensuring an exceptional in-person experience.",
+                "de": "Ich freue mich, meine Erfahrungen mit dem von Newo.ai betriebenen KI-Restaurant-Rezeptionist bei Menlo Tavern zu teilen. Er ist ein echter Wendepunkt für unser Restaurant. Seit der Implementierung der Newo.ai-Lösung vor einigen Monaten können wir 100% unserer eingehenden Anrufe beantworten. Der wirkliche Vorteil liegt darin, dass mein Management-Team nun mehr hochwertige Zeit auf der Restaurantfläche verbringen kann, direkt mit den Gästen interagiert und ein außergewöhnliches persönliches Erlebnis sicherstellt."
+            }
+        }
+    ],
+    "featureInfo2": {
+        "header": {
+            "en": "Ahead of competition",
+            "de": "Einen Schritt voraus"
+        },
+        "categories": [
+            {
+                "header": {
+                    "en": "Single-click, Instant Deployment",
+                    "de": "Mit einem Klick sofort einsatzbereit"
+                },
+                "text": {
+                    "en": "Each agent autonomously learns all available information about your business, including products, prices, services, and service area. Using our proprietary Newo Magic Browser and Newo Magic API technologies, Newo.ai agents can handle sales and appointments in most popular Booking systems, POS/CRM/PMS platforms right out of the box, with no need for technical integration.",
+                    "de": "Jeder Agent lernt selbstständig alle verfügbaren Informationen über Ihr Unternehmen — einschließlich Produkte, Preise, Dienstleistungen und Servicegebiet. Mithilfe unserer firmeneigenen Technologien Newo Magic Browser und Newo Magic API können Newo.ai-Agenten Verkäufe und Termine in den meisten gängigen Buchungssystemen sowie POS-, CRM- und PMS-Plattformen direkt übernehmen — ganz ohne technische Integration."
+                } 
+            },
+            {
+                "header": {
+                    "en": "No Complexity Limits",
+                    "de": "Grenzenlose Integrationen"
+                },
+                "text": {
+                    "en": "With its advanced API, Newo.ai offers virtually unlimited options for integrations, including:",
+                    "de": "Mit einer fortschrittlichen API bietet Newo.ai nahezu unbegrenzte Integrationsmöglichkeiten, darunter:"
+                },
+                "examples": [
+                    {
+                        "en": "Social media and messaging apps (Instagram, WhatsApp)",
+                        "de": "Soziale Medien und Messenger-Apps (Instagram, WhatsApp)"
+                    },
+                    {
+                        "en": "Video surveillance",
+                        "de": "Videoüberwachung"
+                    },
+                    {
+                        "en": "Various types of sensors",
+                        "de": "Verschiedene Sensortypen"
+                    },
+                    {
+                        "en": "POS systems",
+                        "de": "POS-Systeme"
+                    },
+                    {
+                        "en": "Other external systems and services",
+                        "de": "Weitere externe Systeme und Dienste"
+                    }
+                ]
+            },
+            {
+                "header": {
+                    "en": "Low-Cost Customizations",
+                    "de": "Kostengünstige Anpassungen"
+                },
+                "text": {
+                    "en": "Launching a new restaurant soon? Want to send tailored SMS messages with service details or images if a client asks about a specific offering? Unlike most other platforms, Newo.ai:",
+                    "de": "Eröffnen Sie bald ein neues Restaurant? Möchten Sie individuelle SMS mit Service-Details oder Bildern versenden, wenn ein Gast nach einem bestimmten Angebot fragt? Im Gegensatz zu den meisten anderen Plattformen ermöglicht Newo.ai:"
+                },
+                "examples": [
+                    {
+                        "en": "allows real-time adjustments to agent behavior,",
+                        "de": "Echtzeit-Anpassungen des Agentenverhaltens,"
+                    },
+                    {
+                        "en": "requires no programming skills,",
+                        "de": "keine Programmierkenntnisse erforderlich,"
+                    },
+                    {
+                        "en": "provides access to dedicated certified partners for customizations.",
+                        "de": "Zugang zu zertifizierten Partnern für maßgeschneiderte Anpassungen."
+                    }
+                ]
+            },
+            {
+                "header": {
+                    "en": "Human in the Loop Support",
+                    "de": "Menschliche Unterstützung im Hintergrund"
+                },
+                "text": {
+                    "en": "Newo.ai operates a 24/7 Human In the Loop Center, enabling immediate assistance for complex scenarios—especially crucial during the initial weeks after deployment.",
+                    "de": "Newo.ai betreibt ein 24/7 Human-in-the-Loop-Center, das bei komplexen Szenarien sofortige Unterstützung bietet — besonders wichtig in den ersten Wochen nach der Einführung."
+                } 
+            }
+        ],
+        "explanation": {
+            "en": "We've created a platform where you can build an AI employee in just 3 minutes. Right out of the box, it's ready to work — and just like a human employee, it keeps learning and improving through every customer interaction and manager instruction. No lengthy development or big upfront investment needed. All customizations are affordable, and there's no limit to how sophisticated your AI employee can become. It's that simple",
+            "de": "Wir haben eine Plattform entwickelt, auf der Sie in nur 3 Minuten einen KI-Mitarbeiter erstellen können. Direkt nach der Einrichtung ist er einsatzbereit — und genau wie ein menschlicher Mitarbeiter lernt und verbessert er sich mit jeder Kundeninteraktion und jeder Anweisung des Managements. Keine langen Entwicklungszeiten, keine hohen Anfangsinvestitionen. Alle Anpassungen sind kostengünstig — und es gibt keine Grenzen, wie leistungsfähig Ihr KI-Mitarbeiter werden kann. So einfach ist das."
+        },
+        "source": {
+            "en": "David Yang, Co-founder, Newo.ai",
+            "de": "David Yang, Mitgründer von Newo.ai"
+        }
+        
+    },
+    "FAQ": {
+        "header": {
+            "en": "Frequently asked questions",
+            "de": "Häufig gestellte Fragen"
+        },
+        "Q&A": [
+            {
+                "q": {
+                    "en": "Is the AI Host already connected to my booking system?",
+                    "de": "Ist der KI-Rezeptionist bereits mit meinem Buchungssystem verbunden?"
+                },
+                "a": {
+                    "en": "If you have a \"RESERVE A TABLE\" button on Google Maps, the answer is yes. Your Newo AI Host is automatically connected to your booking system, regardless of whether you use OpenTable, Yelp, SevenRooms, Resy, Tock, or another system. If you don't yet have a \"RESERVE A TABLE\" button on Google Maps, you need to add it to use the Newo AI Host. Adding it to Google Maps usually takes 1-2 days.",
+                    "de": "Wenn Sie einen \"TISCH RESERVIEREN\"-Button auf Google Maps haben, lautet die Antwort: ja. Ihr Newo KI-Rezeptionist ist automatisch mit Ihrem Buchungssystem verbunden, unabhängig davon, ob Sie OpenTable, Yelp, SevenRooms, Resy, Tock oder ein anderes System nutzen. Wenn Sie noch keinen \"TISCH RESERVIEREN\"-Button auf Google Maps haben, müssen Sie diesen hinzufügen, um den Newo KI-Rezeptionist zu verwenden. Die Integration auf Google Maps dauert in der Regel 1-2 Tage."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can the AI Host speak multiple languages?",
+                    "de": "Kann der KI-Rezeptionist mehrere Sprachen sprechen?"
+                },
+                "a": {
+                    "en": "Yes. It's pretty awesome.",
+                    "de": "Ja. Das ist wirklich beeindruckend."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can I keep my current phone number?",
+                    "de": "Kann ich meine aktuelle Telefonnummer behalten?"
+                },
+                "a": {
+                    "en": "Yes. Simply forward calls from your public phone number to your AI number, which we will provide along with your AI Receptionist.",
+                    "de": "Ja. Leiten Sie einfach Anrufe von Ihrer öffentlichen Telefonnummer an Ihre KI-Nummer weiter, die wir Ihnen zusammen mit Ihrem KI-Rezeptionist bereitstellen."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can I use the AI Host only after business hours?",
+                    "de": "Kann ich den KI-Rezeptionist nur außerhalb der Geschäftszeiten nutzen?"
+                },
+                "a": {
+                    "en": "Absolutely. You can choose to forward calls from your public phone number 24/7, only after business hours, or in overflow mode (e.g., after the second or third ring if your human employee doesn't pick up).",
+                    "de": "Absolut. Sie können wählen, ob Anrufe von Ihrer öffentlichen Telefonnummer rund um die Uhr, nur außerhalb der Geschäftszeiten oder im Überlaufmodus weitergeleitet werden sollen (z.B. nach dem zweiten oder dritten Klingeln, wenn Ihr menschlicher Mitarbeiter nicht abnimmt)."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can I add live chat with the AI Host to my website?",
+                    "de": "Kann ich den Live-Chat mit dem KI-Rezeptionist auf meiner Website hinzufügen?"
+                },
+                "a": {
+                    "en": "Yes. The Newo.ai platform includes a built-in live chat system at no additional cost. Adding it to your website boosts conversions and increases bookings.",
+                    "de": "Ja. Die Newo.ai-Plattform enthält ein integriertes Live-Chat-System ohne zusätzliche Kosten. Die Integration auf Ihrer Website steigert die Konversionsrate und erhöht die Anzahl der Reservierungen."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can the AI Host communicate with guests via SMS?",
+                    "de": "Kann der KI-Rezeptionist mit Gästen per SMS kommunizieren?"
+                },
+                "a": {
+                    "en": "Yes. One of the key features of Newo.ai is its omnichannel capability, allowing communication across multiple channels like phone, SMS, email, live chat, WhatsApp, Instagram, and other messengers. This significantly improves conversion rates and booking numbers.",
+                    "de": "Ja. Eine der wichtigsten Funktionen von Newo.ai ist die Omnichannel-Fähigkeit, die Kommunikation über mehrere Kanäle ermöglicht — Telefon, SMS, E-Mail, Live-Chat, WhatsApp, Instagram und andere Messenger. Dies verbessert die Konversionsrate und die Anzahl der Reservierungen deutlich."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can the AI Host handle multiple calls simultaneously?",
+                    "de": "Kann der KI-Rezeptionist mehrere Anrufe gleichzeitig bearbeiten?"
+                },
+                "a": {
+                    "en": "Yes. This helps capture more orders during peak hours.",
+                    "de": "Ja. Dies hilft, während der Stoßzeiten mehr Bestellungen entgegenzunehmen."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can the AI Host call my guests and invite them to events?",
+                    "de": "Kann der KI-Rezeptionist meine Gäste anrufen und zu Veranstaltungen einladen?"
+                },
+                "a": {
+                    "en": "Yes. Your AI Host works in both inbound and outbound modes. You can upload a list of customer names, phone numbers, and call details to a connected Google Sheet. For example: \"Hey, Steven, long time no see! I remember you love Pinot Noir—join us with your family on Sunday for brunch. A local winery will be hosting a wine tasting!\" Then click \"Go\", and your AI Host will start calling guests, engaging them in friendly conversations and personalized invitations. This can help increase restaurant revenue during slower periods.",
+                    "de": "Ja. Ihr KI-Rezeptionist arbeitet sowohl im eingehenden als auch im ausgehenden Modus. Sie können eine Liste mit Kundennamen, Telefonnummern und Anrufdetails in ein verbundenes Google Sheet hochladen. Zum Beispiel: \"Hallo Steven, lange nicht gesehen! Ich weiß, dass Sie Pinot Noir lieben — kommen Sie am Sonntag mit Ihrer Familie zum Brunch. Ein lokales Weingut veranstaltet eine Weinverkostung!\" Dann klicken Sie auf \"Start\", und Ihr KI-Rezeptionist beginnt, die Gäste anzurufen, freundliche Gespräche zu führen und personalisierte Einladungen zu verschicken. Dies kann helfen, den Umsatz Ihres Restaurants in ruhigeren Zeiten zu steigern."
+                }
+            },
+            {
+                "q": {
+                    "en": "Is implementing the AI Host really free?",
+                    "de": "Ist die Implementierung des KI-Rezeptionists wirklich kostenlos?"
+                },
+                "a": {
+                    "en": "Yes, the standard functionality is free. Most of the features described on this page are included in the standard functionality. Custom integrations with CRM systems or unique behavior logic are not part of the standard package.",
+                    "de": "Ja, die Standardfunktionen sind kostenlos. Die meisten auf dieser Seite beschriebenen Funktionen sind im Standardpaket enthalten. Individuelle Integrationen mit CRM-Systemen oder spezielle Verhaltenslogiken gehören jedoch nicht zum Standardumfang."
+                }
+            },
+            {
+                "q": {
+                    "en": "How long does it take to implement the AI Host?",
+                    "de": "Wie lange dauert die Implementierung des KI-Rezeptionists"
+                },
+                "a": {
+                    "en": "Implementation with standard functionality takes between 2 hours and 2 days, depending on the workload of our certified agent designers.",
+                    "de": "Die Implementierung der Standardfunktionen dauert zwischen 2 Stunden und 2 Tagen, abhängig von der Auslastung unserer zertifizierten Agenten-Designer."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can I implement the AI Host on my own?",
+                    "de": "Kann ich den KI-Rezeptionist selbst implementieren?"
+                },
+                "a": {
+                    "en": "Yes, you can create an agent by linking your Google Maps listing or website through our platform. The agent learns on its own and takes only 3 minutes to set up. However, you may need to tweak some parameters, such as specifying where to forward after-hours emergency calls or which email address to use for catering requests. For a seamless setup, it's easier to schedule a free video call with our specialist, who will ensure everything is configured perfectly.",
+                    "de": "Ja, Sie können einen Agenten erstellen, indem Sie Ihr Google-Maps-Profil oder Ihre Website über unsere Plattform verknüpfen. Der Agent lernt selbstständig und die Einrichtung dauert nur 3 Minuten. Möglicherweise müssen Sie jedoch einige Parameter anpassen, z.B. festlegen, wohin Notrufe außerhalb der Geschäftszeiten weitergeleitet werden oder welche E-Mail-Adresse für Catering-Anfragen verwendet wird. Für eine reibungslose Einrichtung ist es einfacher, einen kostenlosen Video-Call mit unserem Spezialisten zu vereinbaren, der sicherstellt, dass alles perfekt konfiguriert ist."
+                }
+            },
+            {
+                "q": {
+                    "en": "What should I do if I want to change the AI Host behavior?",
+                    "de": "Was soll ich tun, wenn ich das Verhalten des KI-Rezeptionist ändern möchte?"
+                },
+                "a": {
+                    "en": "You can easily make simple changes, such as updating your menu or adjusting business hours, on your own. However, for more complex modifications (e.g., \"During the holiday season, don't allow single-person table bookings or delivery orders. Takeout orders should only be accepted until 3 PM\"), we recommend delegating this to our certified agent designers. Some changes can be made for free, while others may require a few hours of professional services. The cost for these services starts at $65/hour, depending on the complexity.",
+                    "de": "Einfache Anpassungen — wie das Aktualisieren Ihrer Speisekarte oder das Ändern der Öffnungszeiten — können Sie problemlos selbst vornehmen. Für komplexere Änderungen (z.B. \"Während der Feiertage keine Reservierungen für Einzelpersonen oder Lieferbestellungen zulassen. Abholbestellungen nur bis 15 Uhr annehmen\") empfehlen wir, diese an unsere zertifizierten Agent-Designer zu delegieren. Manche Änderungen sind kostenlos möglich, andere erfordern einige Stunden professioneller Dienstleistung. Die Kosten dafür beginnen bei 65 $/Stunde, abhängig von der Komplexität."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can I listen to the AI Host calls with guests?",
+                    "de": "Kann ich die Gespräche des KI-Rezeptionists mit den Gästen anhören?"
+                },
+                "a": {
+                    "en": "Yes. You will have access to a dedicated business portal where you cn listen to call recordings, read transcripts, and view summaries.",
+                    "de": "Ja. Sie erhalten Zugang zu einem speziellen Business-Portal, in dem Sie Anrufaufzeichnungen anhören, Transkripte lesen und Zusammenfassungen einsehen können."
+                }
+            },
+            {
+                "q": {
+                    "en": "How does the AI Host stay updated on menu changes?",
+                    "de": "Wie bleibt der KI-Rezeptionist über Menüänderungen auf dem Laufenden?"
+                },
+                "a": {
+                    "en": "With standard functionality, you manually upload menu updates as often as needed. A simple customization can enable the system to automatically retrieve updated menu information from your website on a schedule or integrate directly with your POS system.",
+                    "de": "Mit der Standardfunktionalität laden Sie Menü-Updates manuell so oft hoch, wie Sie möchten. Mit einer einfachen Anpassung kann das System automatisch aktualisierte Menüinformationen nach einem Zeitplan von Ihrer Website abrufen oder sich direkt mit Ihrem Kassensystem (POS) integrieren."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can the AI Host handle large group, catering, and private dining requests?",
+                    "de": "Kann der KI-Empfangsmitarbeiter Anfragen für große Gruppen, Catering und private Dining-Events bearbeiten?"
+                },
+                "a": {
+                    "en": "Yes. The AI Host automatically handles requests for large groups, catering, and private dining as part of its standard functionality. It collects details such as guest count, date, time, and event purpose and emails the information to the restaurant manager.",
+                    "de": "Ja. Der KI-Rezeptionist bearbeitet Anfragen für große Gruppen, Catering und private Dining automatisch im Rahmen der Standardfunktionalität. Er erfasst Details wie Gästeanzahl, Datum, Uhrzeit und den Anlass des Events und sendet diese Informationen per E-Mail an den Restaurantmanager."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can the AI Host transfer a call to a human manager if the guest requests it?",
+                    "de": "Kann der KI-Rezeptionist einen Anruf an einen menschlichen Manager weiterleiten, wenn der Gast dies wünscht?"
+                },
+                "a": {
+                    "en": "Yes. Out of the box, Newo.ai AI Hosts include highly flexible settings for forwarding customer information to staff. For example:",
+                    "de": "Ja. Die Newo.ai KI-Rezeptionisten verfügen bereits standardmäßig über äußerst flexible Einstellungen zum Weiterleiten von Kundeninformationen an das Personal. Zum Beispiel:"
+                },
+                "examples": {
+                    "en": [
+                        "During business hours, important inquiries (e.g., a guest wants to book the entire restaurant) can be immediately forwarded to a manager.",
+                        "For operational requests (e.g., a request for a receipt copy or lost items), the AI Host can forward details via SMS or email.",
+                        "During after-hours, the AI Host can collect the details of any inquiry and send a summary via email.",
+                        "These settings require no programming and can be adjusted by you as the user, without needing assistance from our professionals."
+                    ],
+                    "de": [
+                        "Während der Geschäftszeiten können wichtige Anfragen (z.B. wenn ein Gast das gesamte Restaurant reservieren möchte) sofort an einen Manager weitergeleitet werden.",
+                        "Für operative Anfragen (z.B. eine Kopie der Beleg oder Fundgegenstände) kann der KI-Gastgeber die Details per SMS oder E-Mail weiterleiten.",
+                        "Außerhalb der Geschäftszeiten kann der KI-Gastgeber alle Anfragen erfassen und eine Zusammenfassung per E-Mail versenden.",
+                        "Diese Einstellungen erfordern keine Programmierung und können von Ihnen als Nutzer angepasst werden, ohne dass Sie Unterstützung durch unsere Fachleute benötigen."
+                    ]
+
+                }
+            },
+            {
+                "q": {
+                    "en": "Can I try the AI Host and then cancel?",
+                    "de": "Kann ich den KI-Rezeptionisten ausprobieren und anschließend kündigen?"
+                },
+                "a": {
+                    "en": "Yes, we offer monthly plans with no annual contract. You can cancel anytime, and you only pay for the current month.",
+                    "de": "Ja, wir bieten monatliche Pläne ohne Jahresvertrag an. Sie können jederzeit kündigen und bezahlen nur für den aktuellen Monat."
+                }
+            },
+            {
+                "q": {
+                    "en": "How do I get started with the AI Host?",
+                    "de": "Wie fange ich mit dem KI-Rezeptionisten an?"
+                },
+                "a": {
+                    "en": "Just click \"BOOK A DEMO\" on our website and fill out the contact form. We will reach you soon.",
+                    "de": "Klicken Sie einfach auf \"DEMO BUCHEN\" auf unserer Website und füllen Sie das Kontaktformular aus. Wir melden uns in Kürze bei Ihnen."
+                }
+            }
+        ]
+    },
+    "miscFAQ": {
+        "header": {
+            "en": "Questions regarding multi-location services, call centers, and franchisees.",
+            "de": "Fragen zu Multi-Standort-Services, Callcentern und Franchise-Betrieben"
+        },
+        "Q&A": [
+            {
+                "q": {
+                    "en": "I own a restaurant chain. Can I create an AI Agent with a unified number for all locations?",
+                    "de": "Ich besitze eine Restaurantkette. Kann ich einen KI-Agenten mit einer einheitlichen Telefonnummer für alle Standorte erstellen?"
+                },
+                "a": {
+                    "en": "Yes. AI Agents built on the Newo.ai platform work exceptionally well as call centers. They provide location-specific information (operating hours, address, services offered) while allowing guests to make reservations at the desired location. If no slots are available at one location, Newo.ai AI Agents can recommend another location, increasing overall revenue for your chain.",
+                    "de": "Ja. KI-Agenten, die auf der Newo.ai-Plattform erstellt werden, eignen sich hervorragend als Callcenter. Sie liefern standortspezifische Informationen (Öffnungszeiten, Adresse, angebotene Services) und ermöglichen Gästen gleichzeitig, Reservierungen am gewünschten Standort vorzunehmen. Sind an einem Standort keine Plätze verfügbar, können die Newo.ai-KI-Agenten einen anderen Standort empfehlen — und so den Gesamtumsatz Ihrer Kette steigern."
+                }
+            },
+            {
+                "q": {
+                    "en": "Can I automate a centralized call center for my business?",
+                    "de": "Kann ich ein zentrales Callcenter für mein Unternehmen automatisieren?"
+                },
+                "a": {
+                    "en": [
+                        "Yes. Multi-location businesses automated on the Newo.ai platform can use \"bottom-up\", \"top-down\", or hybrid approaches.",
+                        "Bottom-up: Individual location's phone numbers, websites, and contacts are advertised. However, overflow calls (e.g., when staff at a specific location don't answer within 2-3 rings) are transferred to a centralized multi-location AI Agent. This agent can answer questions about all locations and make reservations at any of them.",
+                        "Top-down: A single phone number and website are advertised for the entire chain, and all calls and inquiries are directed to a centralized multi-location AI Agent. This agent can answer questions about all locations and handle bookings for any of them. If a guest requests a call transfer or the delivery of information to a specific location, the multi-location AI Agent can handle it by transferring the call or sending a summary via email to the location's manager."
+                    ],
+                    "de": [
+                        "Ja. Multi-Standort-Unternehmen, die auf der Newo.ai-Plattform automatisiert werden, können \"Bottom-up\", \"Top-down\" oder hybride Ansätze verwenden.",
+                        "Bottom-up: Die Telefonnummern, Webseiten und Kontakte der einzelnen Standorte werden beworben. Überlaufanrufe (z.B. wenn das Personal an einem bestimmten Standort nicht innerhalb von 2-3 Klingelzeichen antwortet) werden jedoch an einen zentralisierten Multi-Standort-KI-Agenten weitergeleitet. Dieser Agent kann Fragen zu allen Standorten beantworten und Reservierungen an jedem beliebigen Standort durchführen.",
+                        "Top-down: Für die gesamte Kette wird eine einzige Telefonnummer und Webseite beworben, und alle Anrufe und Anfragen werden an einen zentralisierten Multi-Standort-KI-Agenten geleitet. Dieser Agent kann Fragen zu allen Standorten beantworten und Buchungen für jeden Standort übernehmen. Wenn ein Gast eine Weiterleitung des Anrufs oder die Übermittlung von Informationen an einen bestimmten Standort wünscht, kann der Multi-Standort-KI-Agent dies übernehmen, indem er den Anruf weiterleitet oder eine Zusammenfassung per E-Mail an den zuständigen Standortmanager sendet."
+                    ]
+                }
+            },
+            {
+                "q": {
+                    "en": "What are the cost and timeline for implementation for a restaurant chain?",
+                    "de": "Welche Kosten und welcher Zeitrahmen gelten für die Implementierung eines KI-Rezeptionist für eine Restaurantkette?"
+                },
+                "a": {
+                    "en": "Deployment for a restaurant chain is not part of the standard functionality, but in some cases, it can be implemented at no cost. The implementation timeline for a restaurant chain is typically around 5-15 business days, depending on the availability of business information.",
+                    "de": "Die Implementierung für eine Restaurantkette ist nicht Teil der Standardfunktionen, kann jedoch in einigen Fällen kostenfrei erfolgen. Der Zeitrahmen für die Implementierung einer Restaurantkette beträgt in der Regel etwa 5-15 Arbeitstage, abhängig von der Verfügbarkeit der Unternehmensinformationen."
+                }
+            }
+        ]
+    }
+   
+}
