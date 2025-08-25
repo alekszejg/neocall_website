@@ -3,6 +3,8 @@
   import Navbar from '$lib/components/navbar.svelte';
   import Form from '$lib/components/form.svelte';
   import Footer from '$lib/components/footer.svelte';
+  import { lang } from '$lib/stores/language';
+  import localization from './localization.json';
 
   onMount(() => {
     // ✅ Copy stylesheets into document.head
@@ -100,7 +102,7 @@
         <div class="lpv3-hero-section__inner">
             <div class="lpv3-hero-section__content">
                 <div class="lpv3-hero-section__content-text">
-                    <h1>Create Your Restaurant AI Host</h1>
+                    <h1>{localization.hero.header[$lang]}</h1>
 <p>Get up to $30,000 additional revenue per month.</p>
                 </div>
                 <div class="lpv3-hero-section__content-form lpv3-api-form hide-mobile">
