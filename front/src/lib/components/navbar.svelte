@@ -117,7 +117,7 @@
                     <span>Call 24/7: +1 (888) 639-6939</span>
                     <span>free consultations</span>
                 </a>
-                <a href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" class="lpv3-btn lpv3-btn--filled" style="white-space: nowrap;">Book a Demo</a>
+                <a href="#finance-contact" class="lpv3-btn lpv3-btn--filled" style="white-space: nowrap;">Book a Demo</a>
                 
                 <LangButton />
 

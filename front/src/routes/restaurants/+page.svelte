@@ -55,10 +55,6 @@
 });
 </script>
 
-<svelte:head>
-  <base href="/newo-ai/">
-</svelte:head>
-
 
    <div id="SITE_CONTAINER">
         <style id="STYLE_OVERRIDES_ID">
@@ -112,7 +108,7 @@
                     </div>
                     <div class="lpv3-pricing-section__form-row-error"></div> -->
                     <div class="block">
-                        <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
+                        <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
                     </div>
                 </div>
             </div>
@@ -125,7 +121,7 @@
                     </div>
                     <div class="lpv3-pricing-section__form-row-error"></div> -->
                     <div class="block">
-                        <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
+                        <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
                     </div>
                 </div>
             </div>
@@ -349,7 +345,7 @@
                 </div>
                 <div class="lpv3-pricing-section__form-row-error"></div>
                 <div class="block px-[10%]">
-                    <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
+                    <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
                 </div>
             </div>
             </div>
@@ -394,7 +390,7 @@
                 </div>
                 <div class="lpv3-pricing-section__form-row-error"></div>
                 <div class="block px-[10%]">
-                    <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
+                    <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
                 </div>
             </div>
             </div>
@@ -417,7 +413,7 @@
                                             <div class="lpv3-pricing-section__row">
                     <div class="lpv3-pricing-section__content">
                         <h2>Prices starting at</h2>
-                                                    <a class="lpv3-btn" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant">
+                                                    <a class="lpv3-btn" href="#finance-contact">
                                 Book A Demo                            </a>
                                             </div>
                     <div class="lpv3-pricing-section__prices">
@@ -550,7 +546,7 @@
                 </div>
                 <div class="lpv3-pricing-section__form-row-error"></div>
                 <div class="block px-[10%]">
-                    <a class="lpv3-btn w-full" href="https://calendly.com/d/cwxs-rnj-t2w/newo-ai-demo-call&utm_source=website_restaurant" target="_blank">Book A Demo</a>
+                    <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
                 </div>
             </div>
                     </div>
