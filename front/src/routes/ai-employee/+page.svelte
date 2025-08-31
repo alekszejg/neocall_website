@@ -1,7 +1,9 @@
 <script>
-import Navbar from '$lib/components/navbar.svelte';
-import Form from '$lib/components/form.svelte';
-import Footer from '$lib/components/footer.svelte';
+    import Navbar from '$lib/components/navbar.svelte';
+    import Form from '$lib/components/form.svelte';
+    import Footer from '$lib/components/footer.svelte';
+    import { lang } from '$lib/stores/language';
+    import localization from './localization.json';
 </script>
 
 
@@ -40,52 +42,43 @@ import Footer from '$lib/components/footer.svelte';
                                                                         
 <main id="PAGES_CONTAINER" class="PAGES_CONTAINER " tabindex="-1" data-main-content="true">
     <div id="SITE_PAGES" data-page-transition="OutIn" class="JshATs SITE_PAGES">
-        <div id="SITE_PAGES_TRANSITION_GROUP" class="fcNEqv">
-
-                                                                        	
-<section class="lpv3 lpv3-text-page-hero lpv3-text-page-hero--dark">
-    <div class="lpv3-container">
-        <div class="lpv3-text-page-hero__inner">
-                <h1>AI Employees:<br> Understanding and<br> Implementing Human-<br>Like AI Agents</h1>
-        </div>
+        <div id="SITE_PAGES_TRANSITION_GROUP" class="fcNEqv">                                                                       	
+            <section class="lpv3 lpv3-text-page-hero lpv3-text-page-hero--dark">
+                <div class="lpv3-container">
+                    <div class="lpv3-text-page-hero__inner">
+                        <h1>
+                            {localization.hero.header[$lang][0]}
+                            <br>{localization.hero.header[$lang][1]}
+                            <br>{localization.hero.header[$lang][2]}
+                            <br>{localization.hero.header[$lang][3]}
+                        </h1>
+                    </div>
                     <div class="lpv3-text-page-hero__image">
-                <img fetchpriority="high" decoding="async" src="images/Newo-F4-Yara-mexican-russian-daveocean-1.png" alt="">
-            </div>
-            </div>
-</section>
-                                                                                              	
-<section class="lpv3 lpv3-text-content-page">
-    <div class="lpv3-container">
-        <div class="lpv3-text-content-page__inner">
-<div>
-  <h2>Key Characteristics of AI Employees</h2>
-  <h3>The Four Pillars of AI Employee Capability</h3>
-  <p>Let’s dive into a more rigorous definition of AI employee or Digital Employees. We identify four key elements that distinguish AI employee-class agents from regular agents:</p>
-  <p><img fetchpriority="high" decoding="async" class="aligncenter wp-image-23102" src="images/ai-agents-en.png" /></p>
-</div>
+                        <img src="images/Newo-F4-Yara-mexican-russian-daveocean-1.png" alt="">
+                    </div>
+                </div>
+            </section>
+                                                                                 	
+            <section class="lpv3 lpv3-text-content-page">
+                <div class="lpv3-container">
+                    <div class="lpv3-text-content-page__inner">
+                        <div>
+                            <h2>{localization.about.header1[$lang]}</h2>
+                            <h3>{localization.about.header2[$lang]}</h3>
+                            <p>{localization.about.text[$lang]}</p>
+                            <p><img class="aligncenter wp-image-23102" src={$lang === "en" ? "images/ai-agents-en.png" : "images/ai-agents-de.png"} /></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-</section>
+</main>     
 
-                      </div>
-                        </div>
-                    </main>     
 <Form />
 <Footer />
                                     </div>
             </div>
         </div>
     </div>
-			<div class="modal" id="pipedrive-calendar">
-			<div class="modal-overlay"></div>
-			<div class="modal-body">
-				<div class="modal-socials">
-					<iframe src="" id="delay-iframe-exec" data-iframe-src="https://newo.pipedrive.com/scheduler/LpxdBzs4/newo-free-consultation"></iframe>       
-				</div>
-			</div>
-			<button class="modal-close">
-				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" style="fill: rgb(255, 255, 255); fill-rule: evenodd;">
-					<path d="M10976.4,1024.73l-14.3,14.28,13.9,13.92-0.7.74-14-13.92-14.2,14.25-0.8-.74,14.3-14.25-14.6-14.61,0.7-.74,14.6,14.61,14.3-14.28Z" transform="translate(-10946.15 -1023.83)">					</path>
-				</svg>
-			</button>
-		</div>
+			
