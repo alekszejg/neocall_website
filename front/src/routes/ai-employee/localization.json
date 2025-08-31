@@ -1,0 +1,32 @@
+{
+    "hero": {
+        "header": {
+            "en": [
+                "AI Employees:",
+                "Understanding and",
+                "Implementing Human-",
+                "Like AI Agents"
+            ],
+            "de": [
+                "KI-Mitarbeiter:",
+                "Verstehen und",
+                "Einsetzen menschähnlicher",
+                "KI-Agenten"
+            ]
+        }
+    },
+    "about": {
+        "header1": {
+            "en": "Key Characteristics of AI Employees",
+            "de": "Zentrale Merkmale von KI-Mitarbeitern"
+        },
+        "header2": {
+            "en": "The Four Pillars of AI Employee Capability",
+            "de": "Die vier Säulen der Fähigkeiten von KI-Mitarbeitern"
+        },
+        "text": {
+            "en": "Let's dive into a more rigorous definition of AI employee or Digital Employees. We identify four key elements that distinguish AI employee-class agents from regular agents:",
+            "de": "Werfen wir einen genaueren Blick auf die Definition von KI-Mitarbeitern bzw. Digitalen Mitarbeitern. Vier Schlüsselfaktoren heben diese Mitarbeiterklasse deutlich von gewöhnlichen Agenten ab:"
+        }
+    }
+}
