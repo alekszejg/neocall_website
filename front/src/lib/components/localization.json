@@ -1,0 +1,130 @@
+{
+    "nav": {
+        "industries": {
+            "header": {
+                "en": "INDUSTRIES",
+                "de": "BRANCHEN"
+            },
+            "categories": {
+                "restaurants": {
+                    "en": "Restaurants",
+                    "de": "Restaurants"
+                },
+                "cleaning": {
+                    "en": "Cleaning Services",
+                    "de": "Reinigungsdienste"
+                },
+                "dental": {
+                    "en": "Dental & Orthodontics",
+                    "de": "Zahnarzt- & Kieferorthopädie"
+                },
+                "HVAC": {
+                    "en": "HVAC/Plumbing",
+                    "de": "HLKS/Heizung, Lüftung, Klima & Sanitär"
+                }
+            }
+        },
+        "contact": {
+            "call": {
+                "en": "CALL 24/7: +49 89 45203680",
+                "de": "24/7 ERREICHBAR: +49 89 45203680"
+            },
+            "freeConsultations": {
+                "en": "FREE CONSULTATIONS",
+                "de": "KONSTENLOSE BERATUNG"
+            },
+            "bookDemo": {
+                "en": "BOOK A DEMO",
+                "de": "DEMO BUCHEN"
+            }
+        }
+    },
+    "footer": {
+        "industries": {
+            "header": {
+                "en": "INDUSTRIES",
+                "de": "BRANCHEN"
+            },
+            "categories": {
+                "restaurants": {
+                    "en": "Restaurants",
+                    "de": "Restaurants"
+                },
+                "cleaning": {
+                    "en": "Cleaning Services",
+                    "de": "Reinigungsdienste"
+                },
+                "dental": {
+                    "en": "Dental & Orthodontics",
+                    "de": "Zahnarzt- & Kieferorthopädie"
+                },
+                "HVAC": {
+                    "en": "HVAC/Plumbing",
+                    "de": "HLKS/Heizung, Lüftung, Klima & Sanitär"
+                }
+            }
+        },
+        "contact": {
+            "header": {
+                "en": "Contact Us",
+                "de": "Kontakt"
+            },
+            "phone": {
+                "en": "Phone",
+                "de": "Telefon"
+            },
+            "email": {
+                "en": "Email",
+                "de": "E-Mail"
+            }
+        },
+        "copyright": {
+            "terms": {
+                "en": "Terms",
+                "de": "AGB"
+            },
+            "privacy": {
+                "en": "Privacy Policy",
+                "de": "Datenschutz"
+            },
+            "dataProcessing": {
+                "en": "Data Processing Addendum",
+                "de": "Auftragsverarbeitungsvertrag"
+            },
+            "trustCenter": {
+                "en": "Trust Center",
+                "de": "Trust-Center"
+            }
+        }
+    },
+    "contactForm": {
+        "learnMore": {
+            "regular": {
+                "en": "Learn more",
+                "de": "Mehr erfahren"
+            },
+            "caps": {
+                "en": "LEARN MORE",
+                "de": "MEHR ERFAHREN"
+            }
+        },
+        "description": {
+            "en": "Leave your information below to find the right plan for your business and check for available promos",
+            "de": "Hinterlassen Sie unten Ihre Daten, um den passenden Tarif für Ihr Unternehmen zu finden und verfügbare Aktionen zu prüfen"
+        },
+        "inputs": {
+            "name": {
+                "en": "Name",
+                "de": "Name"
+                },
+            "email": {
+                "en": "Email",
+                "de": "E-Mail"
+            },
+            "comment": {
+                "en": "Comment",
+                "de": "Kommentar"
+            }
+        }
+    }
+}
