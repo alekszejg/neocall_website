@@ -99,7 +99,7 @@
             <div class="lpv3-hero-section__content">
                 <div class="lpv3-hero-section__content-text">
                     <h1>{localization.hero.header[$lang]}</h1>
-<p>Get up to $30,000 additional revenue per month.</p>
+                    <p>{localization.hero.text[$lang]}</p>
                 </div>
                 <div class="lpv3-hero-section__content-form lpv3-api-form hide-mobile">
                     <!-- <div class="lpv3-api-form__input-row">
@@ -108,7 +108,7 @@
                     </div>
                     <div class="lpv3-pricing-section__form-row-error"></div> -->
                     <div class="block">
-                        <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
+                        <a class="lpv3-btn w-full" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                     </div>
                     <div class="lpv3-pricing-section__form-row-error"></div> -->
                     <div class="block">
-                        <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
+                        <a class="lpv3-btn w-full" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@
 
 <section class="lpv3 lpv3-partners-section">
     <div class="lpv3-container">
-                    <div class="lpv3-partners-section__title">#1 Leading AI Agents from the creators of AI solutions trusted by 70,000 businesses.</div>
+                    <div class="lpv3-partners-section__title">{localization.hero.partnerships[$lang]}</div>
                             <div class="lpv3-partners-section__slider lp2-brands__slider">
                 <div class="swiper-wrapper">
                                             <div class="swiper-slide">
@@ -234,205 +234,203 @@
 <section class="lpv3 lpv3-video-section">
     <div class="lpv3-container">
         <div class="lpv3-video-section__inner">
-            <iframe loading="lazy" width="690" height="388" src="about:blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/Jar2rQRtM58?si=RkTlAozl5wAnHCAu"></iframe><noscript><iframe width="690" height="388" src="https://www.youtube.com/embed/Jar2rQRtM58?si=RkTlAozl5wAnHCAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></noscript>            <div style="text-align:center; margin-top:8px;">View AI in Action</div>
+            <iframe loading="lazy" width="690" height="388" src="about:blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/Jar2rQRtM58?si=RkTlAozl5wAnHCAu"></iframe><noscript><iframe width="690" height="388" src="https://www.youtube.com/embed/Jar2rQRtM58?si=RkTlAozl5wAnHCAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></noscript>            
         </div>
     </div>
 </section>
 
 
-    <section class="lpv3 lpv3-text-section">
-        <div class="lpv3-container">
-            <div class="lpv3-text-section__inner">
-                <h2>Did you know…</h2>
-<p>that 40-80% of phone calls go <strong>unanswered</strong> during rush hours and non-working hours? This means you could be <strong>missing out</strong> on 60-120 bookings every month.</p>
-<p>The Newo.ai AI Restaurant Host answers all your calls 24/7, ensuring you never miss a revenue opportunity—helping you earn more, effortlessly.</p>
-            </div>
+<section class="lpv3 lpv3-text-section">
+    <div class="lpv3-container">
+        <div class="lpv3-text-section__inner">
+            <h2>{localization.facts.header[$lang]}</h2>
+            <p>{localization.facts.text[0][$lang]}</p>
+            <p>{localization.facts.text[1][$lang]}</p>
         </div>
-    </section>
+    </div>
+</section>
 
 
 
 <section class="lpv3 lpv3-video-preview-section">
     <div class="lpv3-container">
         <div class="lpv3-video-preview-section__inner">
-                            <div class="lpv3-video-preview-section__video">
-                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg" alt=""></noscript>
-                </div>
-                                        <div class="lpv3-video-preview-section__content quotes">
-                    <h2>These AI employees can be hired instead of being integrated. This means you dont need to change your processes or retrain your staff—your new AI employee will start working 24/7 from day one, generating up to $30,000 in additional revenue per month per location that you were previously missing out on.</h2>
-<p>David Yang, Co-founder, Newo.ai</p>
-                </div>
-                    </div>
+            <div class="lpv3-video-preview-section__video">
+                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg" alt=""></noscript>
+            </div>
+            <div class="lpv3-video-preview-section__content quotes">
+                <h2>{localization.facts.explanation[$lang]}</h2>
+                <p>{localization.facts.source[$lang]}</p>
+            </div>
+        </div>
     </div>
 </section>
 
 
 <section class="lpv3 lpv3-what-can-do">
     <div class="lpv3-container">
-                            <div class="lpv3-what-can-do__grid">
-                                                                        <div class="lpv3-info-card lpv3-info-card--title" style="background:#ffffff;">
-                                                <div class="lpv3-info-card__content ">
-                            <h2>What Can Your AI Host Do?</h2>
-                        </div>
-                    </div>
-                                                                            <div class="lpv3-info-card lpv3-info-card--number" style="background:#fffbf5;">
-                                                    <span class="lpv3-info-card__number" style="color: #fff0d3">1</span>
-                                                <div class="lpv3-info-card__content ">
-                            <h4>Reservations</h4>
-<ul>
-<li>Make new reservations in OpenTable, SevenRooms, Resy, Tock, etc Google Maps</li>
-<li>Modify existing bookings</li>
-<li>Handle cancellations</li>
-<li>Manage large group bookings</li>
-</ul>
-                        </div>
-                    </div>
-                                                                            <div class="lpv3-info-card lpv3-info-card--number" style="background:#fff0d3;">
-                                                    <span class="lpv3-info-card__number" style="color: #ffd480">2</span>
-                                                <div class="lpv3-info-card__content ">
-                            <h4>Order Management</h4>
-<ul>
-<li>Take delivery orders</li>
-<li>Process pickup orders</li>
-<li>Handle catering requests</li>
-<li>Coordinate private dining</li>
-</ul>
-                        </div>
-                    </div>
-                                                                            <div class="lpv3-info-card lpv3-info-card--number" style="background:#ffd480;">
-                                                    <span class="lpv3-info-card__number" style="color: #ffa800">3</span>
-                                                <div class="lpv3-info-card__content ">
-                            <h4>Outbound Calls</h4>
-<ul>
-<li>Invite guests to family brunches</li>
-<li>Track guest preferences and send personalized invitations to tastings</li>
-</ul>
-                        </div>
-                    </div>
-                                                                            <div class="lpv3-info-card lpv3-info-card--number" style="background:#ffa800;">
-                                                    <span class="lpv3-info-card__number" style="color: #e99a02">4</span>
-                                                <div class="lpv3-info-card__content ">
-                            <h4>Customer Service</h4>
-<ul>
-<li>Relay messages to management</li>
-<li>Provide live music and event schedules</li>
-<li>Answer common questions, including:
-<ul>
-<li>Business hours</li>
-<li>Parking information</li>
-<li>Lost items</li>
-</ul>
-</li>
-</ul>
-                        </div>
-                    </div>
-                                                                            <div class="lpv3-info-card lpv3-info-card--number" style="background:#e99a02;">
-                                                    <span class="lpv3-info-card__number" style="color: #a36302">5</span>
-                                                <div class="lpv3-info-card__content ">
-                            <h4>Reporting</h4>
-<ul>
-<li>Call recordings</li>
-<li>Phone conversation and chat summaries and transcripts</li>
-<li>Weekly report on additional secured revenue (ASR), based on orders placed during off-hours and overflow during peak times</li>
-</ul>
-                        </div>
-                    </div>
-                                                </div>
-                            <div class="lpv3-api-form">
-                <div class="lpv3-api-form__input-row">
-                    <div class="lpv3-api-form__input-row--border"></div>
-                    <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
-                </div>
-                <div class="lpv3-pricing-section__form-row-error"></div>
-                <div class="block px-[10%]">
-                    <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
+        <div class="lpv3-what-can-do__grid">
+            <div class="lpv3-info-card lpv3-info-card--title" style="background:#ffffff;">
+                <div class="lpv3-info-card__content ">
+                    <h2>{localization.featureInfo1.header[$lang]}</h2>
                 </div>
             </div>
+            <div class="lpv3-info-card lpv3-info-card--number" style="background:#fffbf5;">
+                <span class="lpv3-info-card__number" style="color: #fff0d3">1</span>
+                <div class="lpv3-info-card__content ">
+                    <h4>{localization.featureInfo1.categories[0].header[$lang]}</h4>
+                    <ul>
+                        <li class="list-disc">{localization.featureInfo1.categories[0].features[0][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[0].features[1][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[0].features[2][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[0].features[3][$lang]}</li>
+                    </ul>
+                </div>
             </div>
+            <div class="lpv3-info-card lpv3-info-card--number" style="background:#fff0d3;">
+                <span class="lpv3-info-card__number" style="color: #ffd480">2</span>
+                <div class="lpv3-info-card__content ">
+                    <h4>{localization.featureInfo1.categories[1].header[$lang]}</h4>
+                    <ul>
+                        <li class="list-disc">{localization.featureInfo1.categories[1].features[0][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[1].features[1][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[1].features[2][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[1].features[3][$lang]}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lpv3-info-card lpv3-info-card--number" style="background:#ffd480;">
+                <span class="lpv3-info-card__number" style="color: #ffa800">3</span>
+                <div class="lpv3-info-card__content ">
+                    <h4>{localization.featureInfo1.categories[2].header[$lang]}</h4>
+                    <ul>
+                        <li class="list-disc">{localization.featureInfo1.categories[2].features[0][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[2].features[1][$lang]}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lpv3-info-card lpv3-info-card--number" style="background:#ffa800;">
+                <span class="lpv3-info-card__number" style="color: #e99a02">4</span>
+                <div class="lpv3-info-card__content ">
+                    <h4>{localization.featureInfo1.categories[3].header[$lang]}</h4>
+                    <ul>
+                        <li class="list-disc">{localization.featureInfo1.categories[3].features[0][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[3].features[1][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo1.categories[3].features[2].feature[$lang]}
+                            <ul>
+                                <li class="list-disc">{localization.featureInfo1.categories[3].features[2].examples[0][$lang]}</li>
+                                <li class="list-disc">{localization.featureInfo1.categories[3].features[2].examples[1][$lang]}</li>
+                                <li class="list-disc">{localization.featureInfo1.categories[3].features[2].examples[2][$lang]}</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lpv3-info-card lpv3-info-card--number" style="background:#e99a02;">
+                <span class="lpv3-info-card__number" style="color: #a36302">5</span>
+                <div class="lpv3-info-card__content ">
+                    <h4>Reporting</h4>
+                    <ul>
+                        <li class="list-disc">Call recordings</li>
+                        <li class="list-disc">Phone conversation and chat summaries and transcripts</li>
+                        <li class="list-disc">Weekly report on additional secured revenue (ASR), based on orders placed during off-hours and overflow during peak times</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lpv3-api-form">
+            <div class="lpv3-api-form__input-row">
+                <div class="lpv3-api-form__input-row--border"></div>
+                <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
+            </div>
+            <div class="lpv3-pricing-section__form-row-error"></div>
+            <div class="block px-[10%]">
+                <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
+            </div>
+        </div>
 </section>
 
 
 
 <section class="lpv3 lpv3-how-ai-works">
     <div class="lpv3-container">
-                    <h2 class="lpv3-how-ai-works__title">How AI�Host Works</h2>
-                            <div class="lpv3-how-ai-works__row">
-                                                    <div class="lpv3-how-ai-works__step">
-                        <span class="lpv3-how-ai-works__step-number" style="background:#fff0d3">1</span>
-                        <div class="lpv3-how-ai-works__step-line" style="background: linear-gradient(90deg, #fff0d3, #ffa800);"></div>
-                        <div class="lpv3-how-ai-works__step-content">
-                            <h4>Guest Calls</h4>
-<p>Your public phone redirects calls to the AI phone we provide. Feel free to redirect calls during non-working hours, overflow calls or all calls.</p>
-<p>Online chat, SMS, Instagram, Facebook, WhatsApp, messages  all channels are supported.</p>
-                        </div>
-                    </div>
-                                                        <div class="lpv3-how-ai-works__step">
-                        <span class="lpv3-how-ai-works__step-number" style="background:#ffa800">2</span>
-                        <div class="lpv3-how-ai-works__step-line" style="background: linear-gradient(90deg, #ffa800, #e99a02);"></div>
-                        <div class="lpv3-how-ai-works__step-content">
-                            <h4>AI Makes Actual Reservations</h4>
-<p>AI checks available slots in OpenTable, SevenRooms, Resy, Tock. Handles Reservations, Pickup, Delivery Orders, manages large group reservations, handles catering requests, relays messages to management</p>
-                        </div>
-                    </div>
-                                                        <div class="lpv3-how-ai-works__step">
-                        <span class="lpv3-how-ai-works__step-number" style="background:#e99a02">3</span>
-                        <div class="lpv3-how-ai-works__step-line" style="background: linear-gradient(90deg, #e99a02, #a36302);"></div>
-                        <div class="lpv3-how-ai-works__step-content">
-                            <h4>Booking goes to your Table Booking System</h4>
-<p>AI Host sends SMS or email notifications to both the guest and your staff.</p>
-                        </div>
-                    </div>
-                                                </div>
-                            <div class="lpv3-api-form">
-                <div class="lpv3-api-form__input-row">
-                    <div class="lpv3-api-form__input-row--border"></div>
-                    <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
-                </div>
-                <div class="lpv3-pricing-section__form-row-error"></div>
-                <div class="block px-[10%]">
-                    <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
+        <h2 class="lpv3-how-ai-works__title">{localization.howItWorks.header[$lang]}</h2>
+        <div class="lpv3-how-ai-works__row">
+            <div class="lpv3-how-ai-works__step">
+                <span class="lpv3-how-ai-works__step-number" style="background:#fff0d3">1</span>
+                <div class="lpv3-how-ai-works__step-line" style="background: linear-gradient(90deg, #fff0d3, #ffa800);"></div>
+                <div class="lpv3-how-ai-works__step-content">
+                    <h4>{localization.howItWorks.steps[0].header[$lang]}</h4>
+                    <p>{localization.howItWorks.steps[0].text[0][$lang]}</p>
+                    <p>{localization.howItWorks.steps[0].text[1][$lang]}</p>
                 </div>
             </div>
+            <div class="lpv3-how-ai-works__step">
+                <span class="lpv3-how-ai-works__step-number" style="background:#ffa800">2</span>
+                <div class="lpv3-how-ai-works__step-line" style="background: linear-gradient(90deg, #ffa800, #e99a02);"></div>
+                <div class="lpv3-how-ai-works__step-content">
+                    <h4>{localization.howItWorks.steps[1].header[$lang]}</h4>
+                    <p>{localization.howItWorks.steps[1].text[$lang]}</p>
+                </div>
             </div>
+            <div class="lpv3-how-ai-works__step">
+                <span class="lpv3-how-ai-works__step-number" style="background:#e99a02">3</span>
+                <div class="lpv3-how-ai-works__step-line" style="background: linear-gradient(90deg, #e99a02, #a36302);"></div>
+                <div class="lpv3-how-ai-works__step-content">
+                    <h4>{localization.howItWorks.steps[2].header[$lang]}</h4>
+                    <p>{localization.howItWorks.steps[2].text[$lang]}</p>
+                </div>
+            </div>
+        </div>
+        <div class="lpv3-api-form">
+            <div class="lpv3-api-form__input-row">
+                <div class="lpv3-api-form__input-row--border"></div>
+                <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
+            </div>
+            <div class="lpv3-pricing-section__form-row-error"></div>
+            <div class="block px-[10%]">
+                <a class="lpv3-btn w-full" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 
 
 <section class="lpv3 lpv3-pricing-section">
     <div class="lpv3-container">
-                                                    <div class="lpv3-pricing-section__row">
-                    <div class="lpv3-pricing-section__content">
-                        <h2>Your Additional Revenue</h2>
-<p>With AI Restaurant Hosts from Newo.ai, most restaurants receive 2–6 additional reservations per day. Some come from bookings made during non-working hours, while others result from overflow during peak hours. These bookings contribute to your additional secured revenue (ASR).</p>
-                                            </div>
-                    <div class="lpv3-pricing-section__prices">
-                                                    <h2 class="title title--02">$150K-$350K</h2>
-                                                                            <p>additional revenue per location per year</p>
-                                            </div>
-                </div>
-                                            <div class="lpv3-pricing-section__row">
-                    <div class="lpv3-pricing-section__content">
-                        <h2>Prices starting at</h2>
-                                                    <a class="lpv3-btn" href="#finance-contact">
-                                Book A Demo                            </a>
-                                            </div>
-                    <div class="lpv3-pricing-section__prices">
-                                                    <h2 class="title title--02">$99/mo</h2>
-                                                                    </div>
-                </div>
-                        </div>
+        <div class="lpv3-pricing-section__row">
+            <div class="lpv3-pricing-section__content">
+                <h2>{localization.revenue.header[$lang]}</h2>
+                <p>{localization.revenue.text[$lang]}</p>
+            </div>
+            <div class="lpv3-pricing-section__prices">
+                <h2 class="title title--02">$150K-$350K</h2>
+                <p>{localization.revenue.misc.explanation[$lang]}</p>
+            </div>
+        </div>
+        <div class="lpv3-pricing-section__row">
+            <div class="lpv3-pricing-section__content">
+                <h2>{localization.revenue.misc.pricesHeader[$lang]}</h2>
+                <a class="lpv3-btn" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
+            </div>
+            <div class="lpv3-pricing-section__prices">
+                <h2 class="title title--02">$99/mo</h2>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="lpv3 lpv3-about-person">
     <div class="lpv3-container">
-                <div class="lpv3-about-person__inner ">
+        <div class="lpv3-about-person__inner ">
             <div class="lpv3-about-person__content quotes">
-                <h2>Our new AI host is a game-changer. It handles calls 24/7, allowing my team to focus on in-house guests. Callers get quick help, staff are less stressed, and guest satisfaction has improved. It paid for itself in just one week.</h2>
-<p>Bevri Restaurant, Palo Alto, CA</p>
+                <h2>{localization.reviews[0].text[$lang]}</h2>
+                <p>{localization.reviews[0].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_woman_restaura_15d99b0e-27a3-4a35-abf7-f35e21a6d460_2.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_woman_restaura_15d99b0e-27a3-4a35-abf7-f35e21a6d460_2.png" alt=""></noscript>
-                            </div>
+                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_woman_restaura_15d99b0e-27a3-4a35-abf7-f35e21a6d460_2.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_woman_restaura_15d99b0e-27a3-4a35-abf7-f35e21a6d460_2.png" alt="">
+            </div>
         </div>
     </div>
 </section>
@@ -440,14 +438,14 @@
 
 <section class="lpv3 lpv3-about-person">
     <div class="lpv3-container">
-                <div class="lpv3-about-person__inner lpv3-about-person__inner--reverse">
+        <div class="lpv3-about-person__inner lpv3-about-person__inner--reverse">
             <div class="lpv3-about-person__content quotes">
-                <h2>Our restaurant gets very busy in summer. We are missing about 40-60% of phone calls during regular hours, and up to 80% during rush hours. AI Hostess is a game changer.</h2>
-<p>Mexican Restaurant, San Jose, CA</p>
+                <h2>{localization.reviews[1].text[$lang]}</h2>
+                <p>{localization.reviews[1].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_woman_restaurant_man_6944f8ba-69fe-4ee2-afe5-5b5f656b1bef_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_woman_restaurant_man_6944f8ba-69fe-4ee2-afe5-5b5f656b1bef_1.png" alt=""></noscript>
-                            </div>
+                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_woman_restaurant_man_6944f8ba-69fe-4ee2-afe5-5b5f656b1bef_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_woman_restaurant_man_6944f8ba-69fe-4ee2-afe5-5b5f656b1bef_1.png" alt=""></noscript>
+            </div>
         </div>
     </div>
 </section>
@@ -455,14 +453,14 @@
 
 <section class="lpv3 lpv3-about-person">
     <div class="lpv3-container">
-                <div class="lpv3-about-person__inner ">
+        <div class="lpv3-about-person__inner ">
             <div class="lpv3-about-person__content quotes">
-                <h2>… It’s really, really, really fascinating. you know, and again, just the full transparency. We did get demos from five other companies and, you know, none of them were even in the ballpark of what you’re showing. So, we are really impressed</h2>
-<p>Sushi chain, San Francisco, CA</p>
+                <h2>{localization.reviews[2].text[$lang]}</h2>
+                <p>{localization.reviews[2].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_asian_woman_restaura_bbd1bd27-c842-4c50-9939-82748eecb159_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_asian_woman_restaura_bbd1bd27-c842-4c50-9939-82748eecb159_1.png" alt=""></noscript>
-                            </div>
+                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_asian_woman_restaura_bbd1bd27-c842-4c50-9939-82748eecb159_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_asian_woman_restaura_bbd1bd27-c842-4c50-9939-82748eecb159_1.png" alt=""></noscript>
+            </div>
         </div>
     </div>
 </section>
@@ -470,14 +468,14 @@
 
 <section class="lpv3 lpv3-about-person">
     <div class="lpv3-container">
-                <div class="lpv3-about-person__inner lpv3-about-person__inner--reverse">
+        <div class="lpv3-about-person__inner lpv3-about-person__inner--reverse">
             <div class="lpv3-about-person__content quotes">
-                <h2>We opened about 6 months ago. Servicing big parties and special events along with selling our catering services is vital for us. AI Hostess picks up 100% calls, helps our guests with their event planning and passes to our human employees for a final human touch. It reduced work stress and actually grew our revenue!</h2>
-<p>Fusion Restaurant, San Francisco, CA</p>
+                <h2>{localization.reviews[3].text[$lang]}</h2>
+                <p>{localization.reviews[3].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_man_restaurant_manag_082daff0-2bb0-446f-904e-b3f168ce53e8_2.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_man_restaurant_manag_082daff0-2bb0-446f-904e-b3f168ce53e8_2.png" alt=""></noscript>
-                            </div>
+                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_man_restaurant_manag_082daff0-2bb0-446f-904e-b3f168ce53e8_2.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_man_restaurant_manag_082daff0-2bb0-446f-904e-b3f168ce53e8_2.png" alt=""></noscript>
+            </div>
         </div>
     </div>
 </section>
@@ -485,14 +483,14 @@
 
 <section class="lpv3 lpv3-about-person">
     <div class="lpv3-container">
-                <div class="lpv3-about-person__inner ">
+        <div class="lpv3-about-person__inner ">
             <div class="lpv3-about-person__content quotes">
-                <h2>Im thrilled to share my experience using newo.ai GenAI-powered digital employee at Menlo Tavern. Its been a true game-changer for our restaurant. Since implementing the newo.ai solution several months ago, weve been able to answer 100% of our incoming phone calls. The real benefit has been freeing up my management team to spend more quality time on the restaurant floor, interacting directly with guests and ensuring an exceptional in-person experience.</h2>
-<p>Menlo Tavern, Menlo Park CA</p>
+                <h2>{localization.reviews[4].text[$lang]}</h2>
+                <p>{localization.reviews[4].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_man_restaurant_afddf12d-62cd-494e-a9f2-2e20083da025_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_man_restaurant_afddf12d-62cd-494e-a9f2-2e20083da025_1.png" alt=""></noscript>
-                            </div>
+                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_man_restaurant_afddf12d-62cd-494e-a9f2-2e20083da025_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_man_restaurant_afddf12d-62cd-494e-a9f2-2e20083da025_1.png" alt=""></noscript>
+            </div>
         </div>
     </div>
 </section>
@@ -500,329 +498,350 @@
 
 <section class="lpv3 lpv3-competition-section">
     <div class="lpv3-container">
-                    <h2 class="lpv3-competition-section__title">Ahead of competition</h2>
-                            <div class="lpv3-competition-section__grid">
-                                    <div class="lpv3-info-card" style="background:#fffbf5">
-                        <div class="lpv3-info-card__content">
-                            <h4>Single-click, Instant Deployment</h4>
-<p>Each agent autonomously learns all available information about your business, including products, prices, services, and service area. Using our proprietary Newo Magic Browser and Newo Magic API technologies, Newo.ai agents can handle sales and appointments in most popular Booking systems, POS/CRM/PMS platforms right out of the box, with no need for technical integration.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-info-card" style="background:#fff0d3">
-                        <div class="lpv3-info-card__content">
-                            <h4>No Complexity Limits</h4>
-<p>With its advanced API, Newo.ai offers virtually unlimited options for integrations, including:</p>
-<ul>
-<li>Social media and messaging apps (Instagram, WhatsApp)</li>
-<li>Video surveillance</li>
-<li>Various types of sensors</li>
-<li>POS systems</li>
-<li>Other external systems and services</li>
-</ul>
-                        </div>
-                    </div>
-                                    <div class="lpv3-info-card" style="background:#ffd480">
-                        <div class="lpv3-info-card__content">
-                            <h4>Low-Cost Customizations</h4>
-<p>Launching a new restaurant soon? Want to send tailored SMS messages with service details or images if a client asks about a specific offering? Unlike most other platforms, Newo.ai:</p>
-<ul>
-<li>allows real-time adjustments to agent behavior,</li>
-<li>requires no programming skills,</li>
-<li>provides access to dedicated certified partners for customizations.</li>
-</ul>
-                        </div>
-                    </div>
-                                    <div class="lpv3-info-card" style="background:#ffa800">
-                        <div class="lpv3-info-card__content">
-                            <h4>Human in the Loop Support</h4>
-<p>Newo.ai operates a 24/7 Human In the Loop Center, enabling immediate assistance for complex scenarios—especially crucial during the initial weeks after deployment.</p>
-                        </div>
-                    </div>
-                            </div>
-                            <div class="lpv3-api-form">
-                <div class="lpv3-api-form__input-row">
-                    <div class="lpv3-api-form__input-row--border"></div>
-                    <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
-                </div>
-                <div class="lpv3-pricing-section__form-row-error"></div>
-                <div class="block px-[10%]">
-                    <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
+        <h2 class="lpv3-competition-section__title">{localization.featureInfo2.header[$lang]}</h2>
+        <div class="lpv3-competition-section__grid">
+            <div class="lpv3-info-card" style="background:#fffbf5">
+                <div class="lpv3-info-card__content">
+                    <h4>{localization.featureInfo2.categories[0].header[$lang]}</h4>
+                    <p>{localization.featureInfo2.categories[0].text[$lang]}</p>
                 </div>
             </div>
-                    </div>
+            <div class="lpv3-info-card" style="background:#fff0d3">
+                <div class="lpv3-info-card__content">
+                    <h4>{localization.featureInfo2.categories[1].header[$lang]}</h4>
+                    <p>{localization.featureInfo2.categories[1].text[$lang]}</p>
+                    <ul>
+                        <li class="list-disc">{localization.featureInfo2.categories[1].examples[0][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo2.categories[1].examples[1][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo2.categories[1].examples[2][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo2.categories[1].examples[3][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo2.categories[1].examples[4][$lang]}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lpv3-info-card" style="background:#ffd480">
+                <div class="lpv3-info-card__content">
+                    <h4>{localization.featureInfo2.categories[2].header[$lang]}</h4>
+                    <p>{localization.featureInfo2.categories[2].text[$lang]}</p>
+                    <ul>
+                        <li class="list-disc">{localization.featureInfo2.categories[2].examples[0][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo2.categories[2].examples[1][$lang]}</li>
+                        <li class="list-disc">{localization.featureInfo2.categories[2].examples[2][$lang]}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lpv3-info-card" style="background:#ffa800">
+                <div class="lpv3-info-card__content">
+                    <h4>{localization.featureInfo2.categories[3].header[$lang]}</h4>
+                    <p>{localization.featureInfo2.categories[3].text[$lang]}</p>
+                </div>
+            </div>
+        </div>
+        <div class="lpv3-api-form">
+            <div class="lpv3-api-form__input-row">
+                <div class="lpv3-api-form__input-row--border"></div>
+                <gmpx-place-picker type="establishment" placeholder="Find your business on Google Maps" class="input"></gmpx-place-picker>
+            </div>
+            <div class="lpv3-pricing-section__form-row-error"></div>
+            <div class="block px-[10%]">
+                <a class="lpv3-btn w-full" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 
 <section class="lpv3 lpv3-video-preview-section">
     <div class="lpv3-container">
         <div class="lpv3-video-preview-section__inner">
-                            <div class="lpv3-video-preview-section__video">
-                    <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg" alt=""></noscript>
-                </div>
-                                        <div class="lpv3-video-preview-section__content quotes">
-                    <h2>Weve created a platform where you can build an AI employee in just 3 minutes. Right out of the box, its ready to work – and just like a human employee, it keeps learning and improving through every customer interaction and manager instruction. No lengthy development or big upfront investment needed. All customizations are affordable, and theres no limit to how sophisticated your AI employee can become. Its that simple</h2>
-<p>David Yang, Co-founder, Newo.ai</p>
-                </div>
-                    </div>
+            <div class="lpv3-video-preview-section__video">
+                 <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg" alt=""></noscript>
+            </div>
+            <div class="lpv3-video-preview-section__content quotes">
+                <h2>{localization.featureInfo2.explanation[$lang]}</h2>
+                <p>{localization.featureInfo2.source[$lang]}</p>
+            </div>
+        </div>
     </div>
 </section>
 
 
 <section class="lpv3 lpv3-faq-section" id="lpv3-faq-section">
     <div class="lpv3-container">
-                    <h2 class="lpv3-faq-section__title">Frequently asked questions</h2>
-                            <div class="lpv3-faq-section__list">
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Is the AI Host already connected to my booking system?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>If you have a RESERVE A TABLE button on Google Maps, the answer is yes. Your Newo AI Host is automatically connected to your booking system, regardless of whether you use OpenTable, Yelp, SevenRooms, Resy, Tock, or another system. If you dont yet have a RESERVE A TABLE button on Google Maps, you need to add it to use the Newo AI Host. Adding it to Google Maps usually takes 1-2 days.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can the AI Host speak multiple languages?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. Its pretty awesome.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can I keep my current phone number?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. Simply forward calls from your public phone number to your AI number, which we will provide along with your AI Host.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can I use the AI Host only after business hours?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Absolutely. You can choose to forward calls from your public phone number 24/7, only after business hours, or in overflow mode (e.g., after the second or third ring if your human employee doesn’t pick up).</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can I add live chat with the AI Host to my website?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. The Newo.ai platform includes a built-in live chat system at no additional cost. Adding it to your website boosts conversions and increases bookings.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can the AI Host communicate with guests via SMS?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. One of the key features of Newo.ai is its omnichannel capability, allowing communication across multiple channels like phone, SMS, email, live chat, WhatsApp, Instagram, and other messengers. This significantly improves conversion rates and booking numbers.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can the AI Host handle multiple calls simultaneously?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. This helps capture more orders during peak hours.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can the AI Host call my guests and invite them to events?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. Your AI Host works in both inbound and outbound modes. You can upload a list of customer names, phone numbers, and call details to a connected Google Sheet. For example: Hey, Steven, long time no see! I remember you love Pinot Noir—join us with your family on Sunday for brunch. A local winery will be hosting a wine tasting! Then click Go, and your AI Host will start calling guests, engaging them in friendly conversations and personalized invitations. This can help increase restaurant revenue during slower periods.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Is implementing the AI Host really free?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes, the standard functionality is free. Most of the features described on this page are included in the standard functionality. Custom integrations with CRM systems or unique behavior logic are not part of the standard package.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            How long does it take to implement the AI Host?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Implementation with standard functionality takes between 2 hours and 2 days, depending on the workload of our certified agent designers.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can I implement the AI Host on my own?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes, you can create an agent by linking your Google Maps listing or website through our platform. The agent learns on its own and takes only 3 minutes to set up. However, you may need to tweak some parameters, such as specifying where to forward after-hours emergency calls or which email address to use for catering requests. For a seamless setup, its easier to schedule a free video call with our specialist, who will ensure everything is configured perfectly.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            What should I do if I want to change the AI Host’s behavior?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>You can easily make simple changes, such as updating your menu or adjusting business hours, on your own. However, for more complex modifications (e.g., During the holiday season, dont allow single-person table bookings or delivery orders. Takeout orders should only be accepted until 3 PM), we recommend delegating this to our certified agent designers. Some changes can be made for free, while others may require a few hours of professional services. The cost for these services starts at $65/hour, depending on the complexity.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can I listen to the AI Host’s calls with guests?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. You will have access to a dedicated business portal where you can listen to call recordings, read transcripts, and view summaries.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            How does the AI Host stay updated on menu changes?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>With standard functionality, you manually upload menu updates as often as needed. A simple customization can enable the system to automatically retrieve updated menu information from your website on a schedule or integrate directly with your POS system.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can the AI Host handle large group, catering, and private dining requests?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. The AI Host automatically handles requests for large groups, catering, and private dining as part of its standard functionality. It collects details such as guest count, date, time, and event purpose and emails the information to the restaurant manager.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can the AI Host transfer a call to a human manager if the guest requests it?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. Out of the box, Newo.ai AI Hosts include highly flexible settings for forwarding customer information to staff. For example:</p>
-<ul>
-<li>During business hours, important inquiries (e.g., a guest wants to book the entire restaurant) can be immediately forwarded to a manager.</li>
-<li>For operational requests (e.g., a request for a receipt copy or lost items), the AI Host can forward details via SMS or email.</li>
-<li>During after-hours, the AI Host can collect the details of any inquiry and send a summary via email.</li>
-<li>These settings require no programming and can be adjusted by you as the user, without needing assistance from our professionals.</li>
-</ul>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can I try the AI Host and then cancel?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes, we offer monthly plans with no annual contract. You can cancel anytime, and you only pay for the current month.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            How do I get started with the AI Host?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>The easiest way is to call Adrian, our AI Receptionist, at (888) 303-NEWO. Adrian will help you create an AI Host and schedule a meeting with our human expert to complete the setup.</p>
-                        </div>
-                    </div>
-                            </div>
-                    </div>
+        <h2 class="lpv3-faq-section__title">{localization.FAQ.header[$lang]}</h2>
+        <div class="lpv3-faq-section__list">
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][0].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][0].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][1].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][1].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][2].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][2].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][3].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][3].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][4].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][4].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][5].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][5].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][6].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][6].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][7].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][7].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][8].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][8].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][9].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][9].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][10].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][10].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][11].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][11].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][12].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][12].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][13].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][13].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][14].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][14].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion max-h-[2000px]">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][15].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][15].a[$lang]}</p>
+                    <ul class="list-disc pl-10">
+                        <li>{localization.FAQ["Q&A"][15].examples[$lang][0]}</li>
+                        <li>{localization.FAQ["Q&A"][15].examples[$lang][1]}</li>
+                        <li>{localization.FAQ["Q&A"][15].examples[$lang][2]}</li>
+                        <li>{localization.FAQ["Q&A"][15].examples[$lang][3]}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][16].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][16].a[$lang]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.FAQ["Q&A"][17].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.FAQ["Q&A"][17].a[$lang]}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
 <section class="lpv3 lpv3-faq-section" id="lpv3-faq-section">
     <div class="lpv3-container">
-                    <h2 class="lpv3-faq-section__title">Questions regarding multi-location services, call centers, and franchisees.</h2>
-                            <div class="lpv3-faq-section__list">
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            I own a restaurant chain. Can I create an AI Agent with a unified number for all locations?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. AI Agents built on the Newo.ai platform work exceptionally well as call centers. They provide location-specific information (operating hours, address, services offered) while allowing guests to make reservations at the desired location. If no slots are available at one location, Newo.ai AI Agents can recommend another location, increasing overall revenue for your chain.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            Can I automate a centralized call center for my business?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Yes. Multi-location businesses automated on the Newo.ai platform can use bottom-up, top-down, or hybrid approaches.</p>
-<p>Bottom-up: Individual locations phone numbers, websites, and contacts are advertised. However, overflow calls (e.g., when staff at a specific location don’t answer within 2–3 rings) are transferred to a centralized multi-location AI Agent. This agent can answer questions about all locations and make reservations at any of them.</p>
-<p>Top-down: A single phone number and website are advertised for the entire chain, and all calls and inquiries are directed to a centralized multi-location AI Agent. This agent can answer questions about all locations and handle bookings for any of them. If a guest requests a call transfer or the delivery of information to a specific location, the multi-location AI Agent can handle it by transferring the call or sending a summary via email to the location’s manager.</p>
-                        </div>
-                    </div>
-                                    <div class="lpv3-faq-accordion">
-                        <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
-                            What are the cost and timeline for implementation for a restaurant chain?                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                                <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </button>
-                        <div class="lpv3-faq-accordion__content">
-                            <p>Deployment for a restaurant chain is not part of the standard functionality, but in some cases, it can be implemented at no cost. The implementation timeline for a restaurant chain is typically around 5–15 business days, depending on the availability of business information.</p>
-                        </div>
-                    </div>
-                            </div>
-        <Form />
+        <h2 class="lpv3-faq-section__title">{localization.miscFAQ.header[$lang]}</h2>
+        <div class="lpv3-faq-section__list">
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.miscFAQ["Q&A"][0].q[$lang]}                            
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.miscFAQ["Q&A"][0].a[$lang]}</p>
+                </div>
             </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.miscFAQ["Q&A"][1].q[$lang]}   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.miscFAQ["Q&A"][1].a[$lang][0]}</p>
+                    <p>{localization.miscFAQ["Q&A"][1].a[$lang][1]}</p>
+                    <p>{localization.miscFAQ["Q&A"][1].a[$lang][2]}</p>
+                </div>
+            </div>
+            <div class="lpv3-faq-accordion">
+                <button type="button" class="lpv3-faq-accordion__button lpv3-faq-accordion__button--trigger">
+                    {localization.miscFAQ["Q&A"][2].q[$lang]}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 7.1875V22.8125" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22.8125 15H7.1875" stroke="#2F1B04" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                <div class="lpv3-faq-accordion__content">
+                    <p>{localization.miscFAQ["Q&A"][2].a[$lang]}</p>
+                </div>
+            </div>
+        </div>
+        <Form />
+    </div>
 </section>
 
 
