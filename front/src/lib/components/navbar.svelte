@@ -27,6 +27,9 @@
                 <img src="images/neocall.ai-standard.svg" alt="My Logo" width="132" height="30">
             </a>
             <nav class="header__nav">
+                <div class="header__nav-item">
+                    <a class="header__nav-link" href="/ai-employee">{localization.nav["ai-employee"][$lang]}</a>
+                </div>
                 <div class="header__nav-item mr-auto">
                     <a class="header__nav-link" href="#">
                         {localization.nav.industries.header[$lang]}
@@ -38,7 +41,7 @@
                         <div class="header__nav-small-cards" style="width:225px; display: block;">
                             <div class="header__nav-small-card">
                                 <div class="header__nav-small-card-title">{localization.nav.industries.header[$lang]}</div>
-                                <a href="https://newo.ai/restaurant/" class="header__nav-small-card-link">{localization.nav.industries.categories.restaurants[$lang]}</a>
+                                <a href="/restaurants" class="header__nav-small-card-link">{localization.nav.industries.categories.restaurants[$lang]}</a>
                                 <a href="https://newo.ai/cleaning-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.cleaning[$lang]}</a>
                                 <a href="https://newo.ai/dental-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.dental[$lang]}</a>
                                 <a href="https://newo.ai/hvac-plumbing-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.HVAC[$lang]}</a>

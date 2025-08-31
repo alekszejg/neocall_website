@@ -1,5 +1,9 @@
 {
     "nav": {
+        "ai-employee": {
+            "en": "AI Employee",
+            "de": "KI-Mitarbeiter"
+        },
         "industries": {
             "header": {
                 "en": "INDUSTRIES",
