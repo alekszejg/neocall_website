@@ -1,4 +1,10 @@
 {
+    "reusableUI": {
+        "bookDemoBtn": {
+            "en": "BOOK A DEMO",
+            "de": "DEMO BUCHEN"
+        }
+    },
     "hero": {
         "header": {
             "en": "Create Your Restaurant AI Host",
@@ -11,41 +17,33 @@
         "partnerships": {
             "en": "#1 LEADING AI AGENTS FROM THE CREATORS OF AI SOLUTIONS TRUSTED BY 70,000 BUSINESSES.",
             "de": "#1 FÜHRENDE KI-AGENTEN — VON DEN MACHERN VON AI SOLUTIONS, DENEN 70.000 UNTERNEHMEN VERTRAUEN."
-        },
-        "viewInAction": {
-            "en": "View AI in Action",
-            "de": "Schauen Sie sich die KI in Aktion an"
         }
     },
-    "facts": [
-        {
-            "header": {
-                "en": "Did you know…",
-                "de": "Wussten Sie schon…"
-            },
-            "text": [
-                {
-                    "en": "that 40-80% of phone calls go unanswered during rush hours and non-working hours? This means you could be missing out on 60-120 bookings every month.",
-                    "de": "dass 40-80% der Anrufe während Stoßzeiten und außerhalb der Geschäftszeiten unbeantwortet bleiben? Das bedeutet, dass Ihnen jeden Monat 60-120 Buchungen entgehen könnten."
-                }, 
-                {
-                    "en": "The Newo.ai AI Restaurant Host answers all your calls 24/7, ensuring you never miss a revenue opportunity — helping you earn more, effortlessly.",
-                    "de": "Der Newo.ai KI-Restaurant-Rezeptionist nimmt rund um die Uhr all Ihre Anrufe entgegen, sodass Sie keine Umsatzchance verpassen — und hilft Ihnen, mühelos mehr zu verdienen."
-                }
-                
-            ]
+    "facts": {
+        "header": {
+            "en": "Did you know…",
+            "de": "Wussten Sie schon…"
         },
-        {
-            "explanation": {
-                "en": "These AI employees can be \"hired\" instead of being integrated. This means you don't need to change your processes or retrain your staff — your new AI employee will start working 24/7 from day one, generating up to $30,000 in additional revenue per month per location that you were previously missing out on.",
-                "de": "Diese KI-Mitarbeiter können \"eingestellt\" werden, ohne in Ihre Abläufe integriert zu werden. Das bedeutet, dass Sie Ihre Prozesse nicht ändern oder Ihr Personal neu schulen müssen — Ihr neuer KI-Mitarbeiter beginnt ab dem ersten Tag rund um die Uhr zu arbeiten und kann pro Standort bis zu 30.000$ zusätzlichen Umsatz pro Monat erzielen, der Ihnen bisher entgangen ist."
-            },
-            "source": {
-                "en": "David Yang, Co-founder, Newo.ai",
-                "de": "David Yang, Mitgründer von Newo.ai"
+        "text": [
+            {
+                "en": "that 40-80% of phone calls go unanswered during rush hours and non-working hours? This means you could be missing out on 60-120 bookings every month.",
+                "de": "dass 40-80% der Anrufe während Stoßzeiten und außerhalb der Geschäftszeiten unbeantwortet bleiben? Das bedeutet, dass Ihnen jeden Monat 60-120 Buchungen entgehen könnten."
+            }, 
+            {
+                "en": "The Newo.ai AI Restaurant Host answers all your calls 24/7, ensuring you never miss a revenue opportunity — helping you earn more, effortlessly.",
+                "de": "Der Newo.ai KI-Restaurant-Rezeptionist nimmt rund um die Uhr all Ihre Anrufe entgegen, sodass Sie keine Umsatzchance verpassen — und hilft Ihnen, mühelos mehr zu verdienen."
             }
+            
+        ],
+        "explanation": {
+            "en": "These AI employees can be \"hired\" instead of being integrated. This means you don't need to change your processes or retrain your staff — your new AI employee will start working 24/7 from day one, generating up to $30,000 in additional revenue per month per location that you were previously missing out on.",
+            "de": "Diese KI-Mitarbeiter können \"eingestellt\" werden, ohne in Ihre Abläufe integriert zu werden. Das bedeutet, dass Sie Ihre Prozesse nicht ändern oder Ihr Personal neu schulen müssen — Ihr neuer KI-Mitarbeiter beginnt ab dem ersten Tag rund um die Uhr zu arbeiten und kann pro Standort bis zu 30.000$ zusätzlichen Umsatz pro Monat erzielen, der Ihnen bisher entgangen ist."
+        },
+        "source": {
+            "en": "David Yang, Co-founder, Newo.ai",
+            "de": "David Yang, Mitgründer von Newo.ai"
         }
-    ],
+    },
     "featureInfo1": {
         "header": {
             "en": "What Can Your AI Host Do?",
@@ -182,7 +180,7 @@
         "steps": [
             {
                 "header": {
-                    "en": "",
+                    "en": "Guest Calls",
                     "de": "Gästeanrufe"
                 },
                 "text": [
