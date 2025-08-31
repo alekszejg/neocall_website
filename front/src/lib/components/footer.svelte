@@ -1,3 +1,8 @@
+<script>
+    import { lang } from '$lib/stores/language';
+    import localization from './localization.json';
+</script>
+
 <footer id="footer" class="footer">
     <div class="lpv3-container">
         <div class="footer__inner">
@@ -8,32 +13,27 @@
             </div>
             <div class="footer__right">
                 <div class="footer__col">
-                    <div class="footer__title">Industries</div>
+                    <div class="footer__title">{localization.footer.industries.header[$lang]}</div>
                     <ul class="footer__menu">
                         <li>
-                            <a class="footer__menu-link" href="https://newo.ai/restaurant/">Restaurants</a>
+                            <a class="footer__menu-link" href="/restaurants">{localization.footer.industries.categories.restaurants[$lang]}</a>
                         </li>
                         <li>
-                            <a class="footer__menu-link" href="https://agent.newo.ai/creator" target="_blank">Fitness & Wellness</a>
+                            <a class="footer__menu-link" href="/">{localization.footer.industries.categories.cleaning[$lang]}</a>
                         </li>
                         <li>
-                            <a class="footer__menu-link" href="https://agent.newo.ai/creator" target="_blank">Home Services</a>
+                            <a class="footer__menu-link" href="/">{localization.footer.industries.categories.dental[$lang]}</a>
                         </li>
                         <li>
-                            <a class="footer__menu-link" href="https://newo.ai/cleaning-ai-receptionist/">Cleaning Services</a>
-                        </li>
-                        <li>
-                            <a class="footer__menu-link" href="https://newo.ai/dental-ai-receptionist/">Dental & Orthodontics</a>
+                            <a class="footer__menu-link" href="/">{localization.footer.industries.categories.HVAC[$lang]}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="footer__col">
-                    <div class="footer__title">Contact Us</div>
+                    <div class="footer__title">{localization.footer.contact.header[$lang]}</div>
                     <ul class="footer__menu">
-                        <li><a class="footer__menu-link" href="https://www.linkedin.com/company/newo-ai/" target="_blank">Linkedin</a></li>
-                        <li><a class="footer__menu-link" href="https://www.instagram.com/newo.ai/profilecard/?igsh=aWJocHBpbGl0d3Bu" target="_blank">Instagram</a></li>
-                        <li><a class="footer__menu-link" href="https://www.facebook.com/newoai/" target="_blank">Facebook</a></li>
-                        <li><a class="footer__menu-link" href="mailto:info@newo.ai" target="_blank">Email</a></li>
+                        <li><a class="footer__menu-link" href="tel:+498945203680" target="_blank">{localization.footer.contact.phone[$lang]}</a></li>
+                        <li><a class="footer__menu-link" href="mailto:info@neocall.ai" target="_blank">{localization.footer.contact.email[$lang]}</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,10 +41,10 @@
         <div class="footer__copyright">
             <ul class="footer__menu">
                 <li><div class="footer__menu-link">© 2025 Newo.ai</div></li>
-                <li><a class="footer__menu-link" href="https://newo.ai/terms-of-service/">Terms</a></li>
-                <li><a class="footer__menu-link" href="https://newo.ai/privacy-policy/">Privacy Policy</a></li>
-                <li><a class="footer__menu-link" href="https://newo.ai/data-processing-addendum/">Data Processing Addendum</a></li>
-                <li><a class="footer__menu-link" target="_blank" href="https://app.drata.com/trust/5338e0cd-d144-437c-b5db-3776f121cca4">Trust Center</a></li>
+                <li><a class="footer__menu-link" href="https://newo.ai/terms-of-service/">{localization.footer.copyright.terms[$lang]}</a></li>
+                <li><a class="footer__menu-link" href="https://newo.ai/privacy-policy/">{localization.footer.copyright.privacy[$lang]}</a></li>
+                <li><a class="footer__menu-link" href="https://newo.ai/data-processing-addendum/">{localization.footer.copyright.dataProcessing[$lang]}</a></li>
+                <li><a class="footer__menu-link" target="_blank" href="https://app.drata.com/trust/5338e0cd-d144-437c-b5db-3776f121cca4">{localization.footer.copyright.trustCenter[$lang]}</a></li>
             </ul>
             <div class="footer__logos">
                 <a target="_blank" href="https://www.calrest.org/">

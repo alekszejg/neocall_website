@@ -6,8 +6,8 @@ HIGH PRIORITY
 
 LOWER PRIORITY
 - Translations for homepage
-- Translations for contact form
-- Translations + adding personal data to navbar and footer
+- Navbar needs local URL paths
+- Footer needs local URL paths
 - For homepage cut out hero from main website home + add section with 4 pillars of ai employee capability
 - Add stuff for SEO
 - Override footer styling

@@ -1,6 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import LangButton from '$lib/components/langButton.svelte';
+  import { lang } from '$lib/stores/language';
+  import localization from './localization.json';
   
   let headerEl: HTMLElement;
   let navOpenerEl: HTMLButtonElement;
@@ -26,7 +28,8 @@
             </a>
             <nav class="header__nav">
                 <div class="header__nav-item mr-auto">
-                    <a class="header__nav-link" href="#">Industries
+                    <a class="header__nav-link" href="#">
+                        {localization.nav.industries.header[$lang]}
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                             <path d="M10.6735 7.16602L8.50688 9.49935L6.34021 7.16602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
@@ -34,25 +37,22 @@
                     <div class="header__nav-sub-item">
                         <div class="header__nav-small-cards" style="width:225px; display: block;">
                             <div class="header__nav-small-card">
-                                <div class="header__nav-small-card-title">INDUSTRIES</div>
-                                <a href="https://newo.ai/restaurant/" class="header__nav-small-card-link">Restaurants</a>
-                                <a href="https://newo.ai/cleaning-ai-receptionist/" class="header__nav-small-card-link">Cleaning Services</a>
-                                <a href="https://agent.newo.ai/creator" class="header__nav-small-card-link" target="_blank">Home Service Companies</a>
-                                <a href="https://newo.ai/dental-ai-receptionist/" class="header__nav-small-card-link">Dental & Orthodontics</a>
-                                <a href="https://agent.newo.ai/creator" class="header__nav-small-card-link" target="_blank">Fitness & Wellness</a>
-                                <a href="https://agent.newo.ai/creator" class="header__nav-small-card-link" target="_blank">Hospitality</a>
-                                <a href="https://newo.ai/hvac-plumbing-ai-receptionist/" class="header__nav-small-card-link">HVAC/Plumbing</a>
+                                <div class="header__nav-small-card-title">{localization.nav.industries.header[$lang]}</div>
+                                <a href="https://newo.ai/restaurant/" class="header__nav-small-card-link">{localization.nav.industries.categories.restaurants[$lang]}</a>
+                                <a href="https://newo.ai/cleaning-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.cleaning[$lang]}</a>
+                                <a href="https://newo.ai/dental-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.dental[$lang]}</a>
+                                <a href="https://newo.ai/hvac-plumbing-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.HVAC[$lang]}</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
             <div class="header__right">
-                <a class="header__log-in" href="tel:+18886396939">
-                    <span>Call 24/7: +1 (888) 639-6939</span>
-                    <span>free consultations</span>
+                <a class="header__log-in" href="tel:+498945203680">
+                    <span>{localization.nav.contact.call[$lang]}</span>
+                    <span>{localization.nav.contact.freeConsultations[$lang]}</span>
                 </a>
-                <a href="#finance-contact" class="lpv3-btn lpv3-btn--filled" style="white-space: nowrap;">Book a Demo</a>
+                <a href="#finance-contact" class="lpv3-btn lpv3-btn--filled" style="white-space: nowrap;">{localization.nav.contact.bookDemo[$lang]}</a>
                 
                 <LangButton />
 
