@@ -1,6 +1,6 @@
 <script>
     import { lang } from '$lib/stores/language';
-    import localization from './localization.json';
+    import localization from '$lib/localizations/navFooterForm.json';
 </script>
 
 <footer id="footer" class="footer">
@@ -8,7 +8,7 @@
         <div class="footer__inner">
             <div class="footer__left">
                 <a class="footer__logo" href="/">
-                    <img src="images/neocall.ai-white.svg" alt="Logo" width="132" height="29" />
+                    <img src="/images/neocall.ai-white.svg" alt="Logo" width="132" height="29" />
                 </a>
             </div>
             <div class="footer__right">

@@ -1,6 +1,6 @@
 <script>
   import { lang } from '$lib/stores/language';
-  import localization from './localization.json';
+  import localization from '$lib/localizations/navFooterForm.json';
   
   let name = "";
   let email = "";

@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import LangButton from '$lib/components/langButton.svelte';
   import { lang } from '$lib/stores/language';
-  import localization from './localization.json';
+  import localization from '$lib/localizations/navFooterForm.json';
   
   let headerEl: HTMLElement;
   let navOpenerEl: HTMLButtonElement;
@@ -24,7 +24,7 @@
     <div class="container-mett">
         <div class="header__inner">
             <a href="/" class="header__logo">
-                <img src="images/neocall.ai-standard.svg" alt="My Logo" width="132" height="30">
+                <img src="/images/neocall.ai-standard.svg" alt="My Logo" width="132" height="30">
             </a>
             <nav class="header__nav">
                 <div class="header__nav-item">
