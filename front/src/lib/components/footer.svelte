@@ -7,7 +7,7 @@
     <div class="lpv3-container">
         <div class="footer__inner">
             <div class="footer__left">
-                <a class="footer__logo" href="/">
+                <a class="footer__logo" href="/{$lang}">
                     <img src="/images/neocall.ai-white.svg" alt="Logo" width="132" height="29" />
                 </a>
             </div>
@@ -16,16 +16,16 @@
                     <div class="footer__title">{localization.footer.industries.header[$lang]}</div>
                     <ul class="footer__menu">
                         <li>
-                            <a class="footer__menu-link" href="/restaurants">{localization.footer.industries.categories.restaurants[$lang]}</a>
+                            <a class="footer__menu-link" href="/{$lang}/restaurants">{localization.footer.industries.categories.restaurants[$lang]}</a>
                         </li>
                         <li>
-                            <a class="footer__menu-link" href="/">{localization.footer.industries.categories.cleaning[$lang]}</a>
+                            <a class="footer__menu-link" href="/{$lang}/cleaning">{localization.footer.industries.categories.cleaning[$lang]}</a>
                         </li>
                         <li>
-                            <a class="footer__menu-link" href="/">{localization.footer.industries.categories.dental[$lang]}</a>
+                            <a class="footer__menu-link" href="/{$lang}/dental">{localization.footer.industries.categories.dental[$lang]}</a>
                         </li>
                         <li>
-                            <a class="footer__menu-link" href="/">{localization.footer.industries.categories.HVAC[$lang]}</a>
+                            <a class="footer__menu-link" href="/{$lang}/hvac-plumbing">{localization.footer.industries.categories.HVAC[$lang]}</a>
                         </li>
                     </ul>
                 </div>

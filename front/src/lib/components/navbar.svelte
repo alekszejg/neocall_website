@@ -23,12 +23,12 @@
 <header class="header" bind:this={headerEl}>
     <div class="container-mett">
         <div class="header__inner">
-            <a href="/" class="header__logo">
+            <a href="/{$lang}" class="header__logo">
                 <img src="/images/neocall.ai-standard.svg" alt="My Logo" width="132" height="30">
             </a>
             <nav class="header__nav">
                 <div class="header__nav-item">
-                    <a class="header__nav-link" href="/ai-employee">{localization.nav["ai-employee"][$lang]}</a>
+                    <a class="header__nav-link" href="/{$lang}/ai-employee">{localization.nav["ai-employee"][$lang]}</a>
                 </div>
                 <div class="header__nav-item mr-auto">
                     <a class="header__nav-link" href="#">
@@ -41,10 +41,10 @@
                         <div class="header__nav-small-cards" style="width:225px; display: block;">
                             <div class="header__nav-small-card">
                                 <div class="header__nav-small-card-title">{localization.nav.industries.header[$lang]}</div>
-                                <a href="/restaurants" class="header__nav-small-card-link">{localization.nav.industries.categories.restaurants[$lang]}</a>
-                                <a href="https://newo.ai/cleaning-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.cleaning[$lang]}</a>
-                                <a href="https://newo.ai/dental-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.dental[$lang]}</a>
-                                <a href="https://newo.ai/hvac-plumbing-ai-receptionist/" class="header__nav-small-card-link">{localization.nav.industries.categories.HVAC[$lang]}</a>
+                                <a href="/{$lang}/restaurants" class="header__nav-small-card-link">{localization.nav.industries.categories.restaurants[$lang]}</a>
+                                <a href="/{$lang}/cleaning" class="header__nav-small-card-link">{localization.nav.industries.categories.cleaning[$lang]}</a>
+                                <a href="/{$lang}/dental" class="header__nav-small-card-link">{localization.nav.industries.categories.dental[$lang]}</a>
+                                <a href="/{$lang}/hvac-plumbing" class="header__nav-small-card-link">{localization.nav.industries.categories.HVAC[$lang]}</a>
                             </div>
                         </div>
                     </div>
