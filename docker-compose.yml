@@ -7,7 +7,7 @@ services:
     expose:
       - "3000"
     volumes:
-      - ./back/.env:/app/.env:ro
+      - ./.env:/app/.env:ro
       - ./back/src/token.json:/app/src/token.json
     environment:
       - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
@@ -30,12 +30,13 @@ services:
     volumes:
       - ./data/certbot/conf:/etc/letsencrypt:rw
       - ./data/certbot/www:/var/www/certbot:rw
-    env_file:
-      - ./back/.env
     command: >
       certonly --webroot --webroot-path=/var/www/certbot
       --email ${CERTBOT_EMAIL} --agree-tos --no-eff-email
       -d neocall.ai -d www.neocall.ai
+    depends_on:
+    - neocall_front
+    - neocall_back
     logging:
       driver: json-file
       options:
