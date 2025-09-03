@@ -9,6 +9,9 @@ COPY . .
 FROM alpine:3.20
 RUN apk add --no-cache nodejs
 WORKDIR /app
-COPY --from=build /app /app
+COPY --from=build /app/dist /app/
+COPY --from=build /app/package*.json /app/
+# Install only production dependencies
+RUN npm install --production
 EXPOSE 3000
-CMD ["node", "index.js"]
+CMD ["node", "dist/app.js"]
