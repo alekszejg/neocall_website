@@ -1,0 +1,51 @@
+version: '3.8'
+services:
+  neocall_back:
+    build:
+      context: ./back
+      dockerfile: Dockerfile
+    expose:
+      - "3000"
+    volumes:
+      - ./back/src/token.json:/app/src/token.json
+    env_file:
+      - ./back/.env
+    environment:
+      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
+      - GOOGLE_SECRET=${GOOGLE_SECRET}
+      - GOOGLE_REDIRECT_URI=${GOOGLE_REDIRECT_URI}
+    networks:
+      - local
+
+  neocall_front:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    volumes:
+      - frontend-dist:/app/dist
+    networks:
+      - local
+
+  certbot_onetime:
+    image: certbot/certbot:latest
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt:rw
+      - ./data/certbot/www:/var/www/certbot:rw
+    depends_on:
+      - nginx
+    command: >
+      certonly --webroot --webroot-path=/var/www/certbot
+      --email ${CERTBOT_EMAIL} --agree-tos --no-eff-email
+      -d neocall.ai -d www.neocall.ai
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - local
+
+volumes:
+  frontend-dist:
+    external: false
+
