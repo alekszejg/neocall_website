@@ -8,7 +8,7 @@ const config = {
 		adapter: adapter({
 			pages: 'dist', 
 			assets: 'dist', 
-			fallback: 'index.html', 
+			fallback: 'app.html', 
 			precompress: true 
 		}),
 		paths: {

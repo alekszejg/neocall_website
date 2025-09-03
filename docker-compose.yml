@@ -7,9 +7,8 @@ services:
     expose:
       - "3000"
     volumes:
+      - ./back/.env:/app/.env:ro
       - ./back/src/token.json:/app/src/token.json
-    env_file:
-      - ./back/.env
     environment:
       - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
       - GOOGLE_SECRET=${GOOGLE_SECRET}
@@ -31,8 +30,8 @@ services:
     volumes:
       - ./data/certbot/conf:/etc/letsencrypt:rw
       - ./data/certbot/www:/var/www/certbot:rw
-    depends_on:
-      - nginx
+    env_file:
+      - ./back/.env
     command: >
       certonly --webroot --webroot-path=/var/www/certbot
       --email ${CERTBOT_EMAIL} --agree-tos --no-eff-email
@@ -49,3 +48,7 @@ volumes:
   frontend-dist:
     external: false
 
+networks:
+  local:
+    external: true
+    name: deploy_local
