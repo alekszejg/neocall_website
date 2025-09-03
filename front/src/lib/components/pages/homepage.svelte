@@ -12,8 +12,4 @@
 
 <Navbar />
 <Form />
-<Hero />
 <Footer />
-
-
-
