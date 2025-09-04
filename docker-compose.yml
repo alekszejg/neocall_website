@@ -4,8 +4,8 @@ services:
     build:
       context: ./back
       dockerfile: Dockerfile
-    expose:
-      - "3000"
+    ports:
+      - "3001:3001"
     volumes:
       - ./.env:/app/.env:ro
       - ./back/src/token.json:/app/src/token.json
@@ -21,7 +21,7 @@ services:
       context: ./front
       dockerfile: Dockerfile
     ports:
-    - "5173:5173"  
+    - "3000:3000"  
     networks:
       - local
 
