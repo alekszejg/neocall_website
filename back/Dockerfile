@@ -7,12 +7,10 @@ COPY . .
 RUN npm run build
 
 # Run stage
-FROM alpine:3.20
-RUN apk add --no-cache nodejs
+FROM node:24.6.0-alpine
 WORKDIR /app
-COPY --from=build /app/dist /app/
+COPY --from=build /app/dist /app/dist
 COPY --from=build /app/package*.json /app/
-# Install only production dependencies
 RUN npm install --omit=dev
 EXPOSE 3000
 CMD ["node", "dist/app.js"]

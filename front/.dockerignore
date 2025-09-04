@@ -5,6 +5,8 @@ yarn-error.log
 pnpm-lock.yaml
 package-lock.json
 
+/front/.svelte-kit
+
 # Env & configs (compose/runtime will provide env vars)
 .env
 *.env
