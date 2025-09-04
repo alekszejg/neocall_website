@@ -24,7 +24,7 @@
     <div class="container-mett">
         <div class="header__inner">
             <a href="/{$lang}" class="header__logo">
-                <img src="/images/neocall.ai-standard.svg" alt="My Logo" width="132" height="30">
+                <img src="/images/neocall.ai-standard.svg" alt="Neocall Logo" width="132" height="30">
             </a>
             <nav class="header__nav">
                 <div class="header__nav-item">
