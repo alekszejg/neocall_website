@@ -2,4 +2,3 @@ node_modules
 .env
 *.env
 src/token.json
-tsconfig.json
