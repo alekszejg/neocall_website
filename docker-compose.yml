@@ -20,8 +20,8 @@ services:
     build:
       context: ./front
       dockerfile: Dockerfile
-    volumes:
-      - frontend-dist:/app/dist
+    ports:
+    - "5173:5173"  
     networks:
       - local
 
@@ -44,10 +44,6 @@ services:
         max-file: "3"
     networks:
       - local
-
-volumes:
-  frontend-dist:
-    external: false
 
 networks:
   local:
