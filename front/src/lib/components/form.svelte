@@ -1,16 +1,16 @@
-<script>
+<script lang="ts">
   import { lang } from '$lib/stores/language';
   import localization from '$lib/localizations/navFooterForm.json';
   
   let name = "";
   let email = "";
-  let website = "";
+  let comment = "";
   let company = "";
 
-  async function submit(e) {
+  async function submit(e: SubmitEvent) {
     e.preventDefault();
 
-    const payload = { name, email, website, company };
+    const payload = { name, email, comment, company };
     const res = await fetch("/api/submit-form", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -36,7 +36,7 @@
                             <p role="status" aria-live="polite" aria-atomic="true"></p> 
                             <ul></ul>
                         </div>
-                        <form method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init" on:submit={submit}>
+                        <form method="post" class="wpcf7-form init" aria-label="Contact form" on:submit={submit}>
                             <div class="finance-contact__form-row">
                                 <input size="40" maxlength="400" autocomplete="name" aria-required="true" aria-invalid="false" placeholder={localization.contactForm.inputs.name[$lang]} bind:value={name} type="text" name="your-name">
                             </div>
@@ -44,7 +44,7 @@
                                 <input size="40" maxlength="400" autocomplete="email" aria-required="true" aria-invalid="false" placeholder={localization.contactForm.inputs.email[$lang]} bind:value={email} type="email" name="your-email">
                             </div>
                             <div class="finance-contact__form-row">
-                                <input size="40" maxlength="400" aria-invalid="false" placeholder={localization.contactForm.inputs.comment[$lang]} bind:value={website} type="text" name="text-616">
+                                <input size="40" maxlength="400" aria-invalid="false" placeholder={localization.contactForm.inputs.comment[$lang]} bind:value={comment} type="text" name="text-616">
                             </div>
                             <div class="finance-contact__form-row finance-contact__form-company-row display-none">
                                 <input size="40" maxlength="400" aria-invalid="false" placeholder="Company" bind:value={company} type="text" name="company">
