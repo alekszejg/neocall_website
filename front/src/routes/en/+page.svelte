@@ -1,19 +1,8 @@
 <script>
-    import Navbar from '$lib/components/navbar.svelte';
-    import Hero from '$lib/components/homeHero.svelte';
-    import Form from '$lib/components/form.svelte';
-    import Footer from '$lib/components/footer.svelte';
-    import { lang } from '$lib/stores/language';
-    
-    lang.set("en")
+    import Homepage from '$lib/components/pages/homepage.svelte'
 </script>
 
-
-
-<Navbar />
-<Form />
-<Hero />
-<Footer />
+<Homepage />
 
 
 

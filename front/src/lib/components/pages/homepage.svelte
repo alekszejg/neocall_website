@@ -11,5 +11,6 @@
 
 
 <Navbar />
+<Hero />
 <Form />
 <Footer />
