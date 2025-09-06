@@ -7,9 +7,25 @@
   let comment = "";
   let company = "";
 
+  $: nameErr = name.length > 50 ? localization.contactForm.errors.name[$lang] : "";
+  $: emailErr = email.length > 100 ? localization.contactForm.errors.email[$lang] : "";
+  $: commentErr = comment.length > 500 ? localization.contactForm.errors.comment[$lang] : "";
+
+  $: formValid = !nameErr && !emailErr && !commentErr && name && email && comment;
+
+  let loading = false;
+  let sent = false;
+  let internalErr = false;
+
   async function submit(e: SubmitEvent) {
     e.preventDefault();
-
+    if (!formValid) {
+      return; 
+    }
+    
+    internalErr = false;
+    loading = true;
+    
     const payload = { name, email, comment, company };
     const res = await fetch("/api/submit-form", {
         method: "POST",
@@ -17,16 +33,28 @@
         body: JSON.stringify(payload)
     });
 
-    const data = await res.json();
-    console.log("Response:", data);
+    loading = false;
+    if (res.ok) {
+        sent = true;
+        await new Promise(r => setTimeout(r, 1000)); 
+        sent = false;
+        name = "";
+        email = "";
+        comment = "";
+        company = "";
+    } else {
+        internalErr = true;
     }
+    }
+
+
 </script>
 
 <section class="lpv3 finance-contact" id="finance-contact">
     <div class="finance-container">
         <div class="finance-contact__inner">
             <div class="finance-contact__form-wrapper">
-                <h2 class="title title--02">{localization.contactForm.learnMore.regular[$lang]}</h2>
+                <h2 class="title title--02">{localization.contactForm.learnMore[$lang]}</h2>
                 <div class="finance-contact__description">
                      <p>{localization.contactForm.description[$lang]}</p>
                 </div>
@@ -38,19 +66,38 @@
                         </div>
                         <form method="post" class="wpcf7-form init" aria-label="Contact form" on:submit={submit}>
                             <div class="finance-contact__form-row">
-                                <input size="40" maxlength="400" autocomplete="name" aria-required="true" aria-invalid="false" placeholder={localization.contactForm.inputs.name[$lang]} bind:value={name} type="text" name="your-name">
+                                <input size="40" autocomplete="name" placeholder={localization.contactForm.inputs.name[$lang]} bind:value={name} type="text" required>
+                                {#if nameErr}
+                                    <p class="formError">{nameErr}</p>
+                                {/if}
                             </div>
                             <div class="finance-contact__form-row">
-                                <input size="40" maxlength="400" autocomplete="email" aria-required="true" aria-invalid="false" placeholder={localization.contactForm.inputs.email[$lang]} bind:value={email} type="email" name="your-email">
+                                <input size="40" autocomplete="email" placeholder={localization.contactForm.inputs.email[$lang]} bind:value={email} type="email" required>
+                                {#if emailErr}
+                                    <p class="formError">{emailErr}</p>
+                                {/if}
                             </div>
                             <div class="finance-contact__form-row">
-                                <input size="40" maxlength="400" aria-invalid="false" placeholder={localization.contactForm.inputs.comment[$lang]} bind:value={comment} type="text" name="text-616">
+                                <textarea class="w-full" rows="6" placeholder={localization.contactForm.inputs.comment[$lang]} bind:value={comment} required></textarea>
+                                {#if commentErr}
+                                    <p class="formError">{commentErr}</p>
+                                {/if}
                             </div>
                             <div class="finance-contact__form-row finance-contact__form-company-row display-none">
-                                <input size="40" maxlength="400" aria-invalid="false" placeholder="Company" bind:value={company} type="text" name="company">
+                                <input size="40" placeholder="Company" bind:value={company} type="text" name="company">
                             </div>
                             <div class="finance-contact__form-row">
-                                <input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value={localization.contactForm.learnMore.caps[$lang]}>
+                                <input 
+                                    class="wpcf7-form-control wpcf7-submit has-spinner" 
+                                    type="submit" 
+                                    value={
+                                        (!loading && !sent && localization.contactForm.btnText.learnMore[$lang]) || 
+                                        (loading && !sent && localization.contactForm.btnText.sending[$lang]) || 
+                                        (sent && localization.contactForm.btnText.sent[$lang])
+                                    }>
+                                {#if internalErr}
+                                    <p class="formError">{localization.contactForm.errors.internalErr[$lang]}</p>
+                                {/if}
                             </div>
                             <div class="wpcf7-response-output" aria-hidden="true"></div>
                         </form>

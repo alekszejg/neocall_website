@@ -103,14 +103,8 @@
     },
     "contactForm": {
         "learnMore": {
-            "regular": {
-                "en": "Learn more",
-                "de": "Mehr erfahren"
-            },
-            "caps": {
-                "en": "LEARN MORE",
-                "de": "MEHR ERFAHREN"
-            }
+            "en": "Learn more",
+            "de": "Mehr erfahren"
         },
         "description": {
             "en": "Leave your information below to find the right plan for your business and check for available promos",
@@ -118,16 +112,48 @@
         },
         "inputs": {
             "name": {
-                "en": "Name",
-                "de": "Name"
+                "en": "Name*",
+                "de": "Name*"
                 },
             "email": {
-                "en": "Email",
-                "de": "E-Mail"
+                "en": "Email*",
+                "de": "E-Mail*"
             },
             "comment": {
-                "en": "Comment",
-                "de": "Kommentar"
+                "en": "Comment*",
+                "de": "Kommentar*"
+            }
+        },
+        "btnText": {
+            "learnMore": {
+                "en": "LEARN MORE",
+                "de": "MEHR ERFAHREN"
+            },
+            "sending": {
+                "en": "SENDING...",
+                "de": "WIRD GESENDET..."
+            },
+            "sent": {
+                "en": "SENT!",
+                "de": "GESENDET!"
+            }
+        },
+        "errors": {
+            "name": {
+                "en": "Name cannot exceed 50 characters.",
+                "de": "Der Name darf 50 Zeichen nicht überschreiten."
+            },
+            "email": {
+                "en": "Email cannot exceed 100 characters.",
+                "de": "Die E-Mail darf 100 Zeichen nicht überschreiten."
+            },
+            "comment": {
+                "en": "Comment cannot exceed 500 characters.",
+                "de": "Der Kommentar darf 500 Zeichen nicht überschreiten."
+            },
+            "internalErr": {
+                "en": "Unexpected error. Please try again.",
+                "de": "Unerwarteter Fehler. Bitte versuchen Sie es erneut."
             }
         }
     }
