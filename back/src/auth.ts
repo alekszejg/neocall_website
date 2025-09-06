@@ -1,9 +1,11 @@
 import { google } from 'googleapis';
 import dotenv from 'dotenv';
 import fs from 'fs/promises';
+import path from 'path';
+
 import tokenData from './token.json';
 
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, '../../.env') });
 
 interface TokenData {
     access_token: string;
