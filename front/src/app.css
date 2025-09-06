@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Homepage override */
 .homepageP {
     margin: 0px;
+}
+
+#hpHeroContainer {
+  margin: 82px 0;
+}
+
+#hpHeader1 {
+  margin-top: 3rem;
+  border-radius: 0.75rem;
+}
+
+#hpHeader2 {
+  color: #000000;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+#hpLinkDiv {
+  padding: 0.3rem 0px;
+  margin-top: 20px;
+  border-radius: 0.75rem;
+}
+
+/* Homepage form override*/
+.finance-contact__form-row textarea {
+  appearance: none;
+  background-color: #fff;
+  border: 1.11111px solid #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;      /* will be overridden at desktop by same media query */
+  line-height: 28px;    /* same */
+  padding: 3px 3px 3px 13px;
+  width: 100%;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+form .formError {
+  color: red;
 }
