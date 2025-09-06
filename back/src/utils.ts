@@ -18,17 +18,17 @@ function formatDate(date: Date): string {
     const day = parts.find(p => p.type === 'day')!.value;
     const month = parts.find(p => p.type === 'month')!.value;
     const year = parts.find(p => p.type === 'year')!.value;
-    const hour = parts.find(p => p.type === 'hour')!.value;
-    const minute = parts.find(p => p.type === 'minute')!.value;
+    const hour = parts.find(p => p.type === 'hour')!.value.padStart(2, '0');
+    const minute = parts.find(p => p.type === 'minute')!.value.padStart(2, '0');
 
-    return `${day}-${month}-${year} ${hour}:${minute}`;
+    return `'${day}-${month}-${year} ${hour}:${minute}'`;
 }
 
-export async function writeToSheet(name: string, email: string, website: string) {
+export async function writeToSheet(name: string, email: string, comment: string) {
     try {
         await loadToken();
         const dateTime = formatDate(new Date());
-        const values = [[dateTime, name, email, website]];
+        const values = [[dateTime, name, email, comment]];
         const sheets = google.sheets({ version: 'v4', auth: oAuth2Client });
     
         const response = await sheets.spreadsheets.values.append({
@@ -42,8 +42,7 @@ export async function writeToSheet(name: string, email: string, website: string)
         return response.data;
     } catch (err: unknown) {
         const errMessage = isGoogleApiErr(err) ? err.message : String(err);
-        console.error('Error writing to sheet:', errMessage);
-        throw err;
+        throw errMessage;
     }
 }
 

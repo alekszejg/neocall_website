@@ -1,8 +1,9 @@
 import express, { Request, Response, NextFunction  } from "express";
 import { oAuth2Client } from './auth';
+import { writeToSheet } from "./utils";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Middleware to parse JSON body
 app.use(express.json());
@@ -28,11 +29,38 @@ app.get('/oauth/callback', async (req, res) => {
   }
 });
 
-app.post("/api/submit-form", (req: Request, res: Response) => {
-  const { name, email, website, company } = req.body;
-  console.log("Form submitted:", { name, email, website, company });
+app.post("/api/submit-form", async (req: Request, res: Response) => {
+  const { name, email, comment, company } = req.body;
+  
+  if (
+    typeof name !== "string" ||
+    typeof email !== "string" ||
+    typeof comment !== "string" ||
+    (company !== undefined && typeof company !== "string")
+  ) {
+    return res.status(400).json({ success: false, message: "Invalid field types" });
+  }
 
-  res.json({ success: true, message: "Form received!" });
+  // this one is for bots
+  if (company !== "" && company.trim() !== "") {
+    return res.status(200).json({ success: true, message: "Form successfully submitted!" });
+  }
+
+  if (name.length > 50) {
+    return res.status(400).json({ success: false, message: "Name cannot exceed 50 characters" });
+  } else if (email.length > 100) {
+    return res.status(400).json({ success: false, message: "Email cannot exceed 100 characters" });
+  } else if (comment.length > 500) {
+    return res.status(400).json({ success: false, message: "Comment cannot exceed 500 characters" });
+  }
+
+  try {
+    await writeToSheet(name, email, comment);
+    return res.status(200).json({ success: true, message: "Form successfully submitted!" });
+  } catch (err) {
+    console.error("Google Sheets error:", err);
+    return res.status(500).json({ success: false, message: "Internal error. Please try again." });
+  }
 });
 
 // Start server
