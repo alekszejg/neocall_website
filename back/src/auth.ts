@@ -49,8 +49,14 @@ async function refreshToken() {
         console.log('Tokens refreshed and saved to token.json');
         return credentials;
     } catch (err) {
-        console.error('Error refreshing tokens');
-        throw new Error('Failed to refresh tokens. Run auth flow again.');
+    // Print full error details
+        if (err instanceof Error) {
+            console.error('Error refreshing tokens:', err.message);
+            console.error(err.stack);
+        } else {
+            console.error('Error refreshing tokens:', err);
+        }
+        throw new Error(`Failed to refresh tokens. Original error: ${err instanceof Error ? err.message : String(err)}`);
     }
 }
 
