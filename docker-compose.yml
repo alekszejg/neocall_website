@@ -7,8 +7,8 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - ./.env:/app/.env:ro
-      - ./back/src/token.json:/app/src/token.json
+      - ../volumes/neocall/.env:/app/.env:ro
+      - ../volumes/neocall/token.json:/app/src/token.json
     environment:
       - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
       - GOOGLE_SECRET=${GOOGLE_SECRET}
