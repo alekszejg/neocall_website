@@ -1,0 +1,64 @@
+{
+    "homepage": {
+        "title": {
+            "en": "AI Phone Assistant from Newo.ai",
+            "de": "Ihr KI-Telefonassistent von Newo.ai"
+        },
+        "description": {
+            "en": "Newo.ai is your cloud-based AI phone assistant for instant, automated call handling — 24/7, GDPR-compliant, and seamlessly integrated with your CRM. Try it now for free!",
+            "de": "Newo.ai ist Ihr cloud-basierter KI-Telefonassistent für sofortige, automatisierte Anrufbearbeitung - 24/7, DSGVO-konform und nahtlos in Ihr CRM integriert. Testen Sie es jetzt kostenlos!"
+        }
+    },
+    "aiEmployee": {
+        "title": {
+            "en": "About AI-Employees from Newo.ai",
+            "de": "Über die KI-Mitarbeiter von Newo.ai"
+        },
+        "description": {
+            "en": "Discover how Newo.ai AI-Employees replicate human-like agents. Learn about their key capabilities and how they transform automated workflows.",
+            "de": "Erfahren Sie, wie die KI-Mitarbeiter von Newo.ai menschenähnliche Agenten nachbilden. Lernen Sie ihre wichtigsten Fähigkeiten kennen und wie sie Ihre automatisierten Arbeitsabläufe verbessern."
+        }
+    },
+    "industries": {
+        "restaurants": {
+            "title": {
+                "en": "AI Restaurant Host from Newo.ai - Boost Bookings & Revenue",
+                "de": "KI-Restaurant-Rezeptionist von Newo.ai - Mehr Buchungen & Umsatz"
+            },
+            "description": {
+                "en": "Never miss a booking again! Newo.ai AI Restaurant Hosts handle calls 24/7, manage reservations, orders, and customer service — effortlessly increasing your restaurant's revenue.",
+                "de": "Verpassen Sie nie wieder eine Reservierung! Die KI-Rezeptionist von Newo.ai beantworten Anrufe rund um die Uhr, verwalten Buchungen, Bestellungen und Kundenservice — und steigern so mühelos Ihren Umsatz."
+            }
+        },
+        "cleaning": {
+            "title": {
+                "en": "AI Cleaning Receptionist from Newo.ai - Boost Bookings & Revenue",
+                "de": "KI-Rezeptionist für Reinigungsdienste von Newo.ai - Mehr Buchungen & Umsatz"
+            },
+            "description": {
+                "en": "Never miss a cleaning booking again! Newo.ai AI Receptionists handle calls 24/7, manage appointments, estimates, reminders, and customer service — effortlessly increasing your business revenue.",
+                "de": "Verpassen Sie nie wieder eine Buchung! Die KI-Rezeptionisten von Newo.ai beantworten Anrufe rund um die Uhr, verwalten Termine, Kostenvoranschläge, Erinnerungen und Kundenservice — und steigern so mühelos Ihren Umsatz."
+            }
+        },
+        "dental": {
+            "title": {
+                "en": "AI Dental Receptionist from Newo.ai - Boost Appointments & Revenue",
+                "de": "KI-Rezeptionisten für Zahnkliniken von Newo.ai - Mehr Termine & Umsatz"
+            },
+            "description": {
+                "en": "Never miss a customer call or booking opportunity! Newo.ai AI Receptionists handle calls 24/7, schedule appointments, send reminders, and manage patient inquiries — effortlessly increasing your practice's revenue.",
+                "de": "Verpassen Sie nie wieder einen Anruf oder eine Buchungsmöglichkeit! Die KI-Rezeptionisten von Newo.ai beantwortet Anrufe rund um die Uhr, vereinbart Termine, sendet Erinnerungen und bearbeitet Patientenanfragen — und steigert so mühelos den Umsatz Ihrer Praxis."
+            }
+        },
+        "hvac": {
+            "title": {
+                "en": "HVAC & Plumbing AI Receptionist from Newo.ai - Boost Bookings & Revenue",
+                "de": "KI-Rezeptionist für Heizungs-, Lüftungs- & Sanitärdienste von Newo.ai - Mehr Buchungen & Umsatz"
+            },
+            "description": {
+                "en": "Never miss a customer call or booking opportunity! Newo.ai AI Receptionists handle calls 24/7, schedule service appointments, provide instant estimates, and manage customer inquiries — effortlessly increasing your business revenue.",
+                "de": "Verpassen Sie nie wieder einen Anruf oder eine Buchungsmöglichkeit! Die KI-Rezeptionist von Newo.ai beantwortet Anrufe rund um die Uhr, vereinbart Service-Termine, erstellt sofortige Kostenvoranschläge und bearbeitet Kundenanfragen — und steigert so mühelos Ihren Umsatz."
+            }
+        }
+    }
+}
