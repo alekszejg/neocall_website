@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://neocall.ai/en</loc>
+    <lastmod>2025-09-07</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://neocall.ai/de</loc>
+    <lastmod>2025-09-07</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://neocall.ai/en/ai-employee</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://neocall.ai/de/ai-employee</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://neocall.ai/en/restaurants</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neocall.ai/de/restaurants</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://neocall.ai/en/cleaning</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neocall.ai/de/cleaning</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://neocall.ai/en/dental</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neocall.ai/de/dental</loc>
+    <priority>0.7</priority>
+  </url>
+  
+
+  <url>
+    <loc>https://neocall.ai/en/hvac-plumbing</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neocall.ai/de/hvac-plumbing</loc>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>
