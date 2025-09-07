@@ -3,9 +3,9 @@ import dotenv from 'dotenv';
 import fs from 'fs/promises';
 import path from 'path';
 
-import tokenData from './token.json';
+const TOKEN_PATH = path.resolve(__dirname, 'token.json');
 
-dotenv.config({ path: path.resolve(__dirname, '../../.env') });
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 interface TokenData {
     access_token: string;
@@ -44,7 +44,7 @@ async function getOAuthTokens() {
 async function refreshToken() {
     try {
         const { credentials } = await oAuth2Client.refreshAccessToken();
-        await fs.writeFile('./token.json', JSON.stringify(credentials, null, 2))
+        await fs.writeFile(TOKEN_PATH, JSON.stringify(credentials, null, 2))
         oAuth2Client.setCredentials(credentials);
         console.log('Tokens refreshed and saved to token.json');
         return credentials;
@@ -56,6 +56,8 @@ async function refreshToken() {
 
 export async function loadToken() {
   try {
+    const raw = await fs.readFile(TOKEN_PATH, 'utf8');
+    const tokenData = JSON.parse(raw);
     oAuth2Client.setCredentials(tokenData);
   } catch (err) {
     try {

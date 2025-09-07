@@ -7,7 +7,6 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - ../volumes/neocall/.env:/app/.env:ro
       - ../volumes/neocall/token.json:/app/src/token.json
     environment:
       - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
