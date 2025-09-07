@@ -1,11 +1,10 @@
 HIGH PRIORITY
-- homepage: add new hero section
-- homepage: add localization of added hero section
 - SEO: add for every english and german page
-- backend: verify inputs (json format, type string, string length)
-- docker: prepare dockerfiles/compose
-- nginx: add this website to existing nginx.conf.template
+- Sitemap
+- Robots.txt check
+- Form: put actual domain as URL
+- Nginx: add redirect from / to /en
+- Nginx: redirect domain/api/submit to http://localhost:3001/api/submit
 
-
-LOWER PRIORITY
-- Override footer styling
+AFTERWARDS
+- Industries routes/pages and their localizations
