@@ -1,0 +1,20 @@
+{
+    "hero": {
+        "header1": {
+            "en": "Your AI Phone Assistant",
+            "de": "Dein KI-Telefonassistent"
+        },
+        "header2": {
+            "en": "Reduce support costs by up to 80%",
+            "de": "Supportkosten um bis zu 80% reduzieren"
+        },
+        "text": {
+            "en": "Newo.ai is your cloud-based AI phone assistant for instant, automated call handling – available 24/7, GDPR-compliant, and seamlessly integrated into your CRM.",
+            "de": "Newo.ai ist dein cloud-basierter KI-Telefonassistent für sofortige, automatisierte Anrufbearbeitung - 24/7, DSGVO-konform und nahtlos in dein CRM integriert."
+        },
+        "testNow": {
+            "en": "Test for free now",
+            "de": "Jetzt konstelos testen"
+        }
+    }
+}
