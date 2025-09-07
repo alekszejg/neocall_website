@@ -13,6 +13,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<link rel="alternate icon" href="/favicon.ico">
 </svelte:head>
 
 {@render children?.()}
