@@ -5,17 +5,13 @@
   import localization from '$lib/localizations/navFooterForm.json';
   
   let headerEl: HTMLElement;
-  let navOpenerEl: HTMLButtonElement;
+  let burgerMenu: HTMLButtonElement;
 
   onMount(() => {
-    const navOpener = document.querySelector<HTMLButtonElement>('.header__nav-opener');
-    const header = document.querySelector<HTMLElement>('header.header');
-    
     const toggleNav = () => headerEl.classList.toggle('show-nav');
-    navOpenerEl.addEventListener('click', toggleNav);
-
+    burgerMenu.addEventListener('click', toggleNav);
     return () => {
-      navOpenerEl.removeEventListener('click', toggleNav);
+      burgerMenu.removeEventListener('click', toggleNav);
     };
   });
 </script>
@@ -31,7 +27,7 @@
                     <a class="header__nav-link" href="/{$lang}/ai-employee">{localization.nav["ai-employee"][$lang]}</a>
                 </div>
                 <div class="header__nav-item mr-auto">
-                    <a class="header__nav-link" href="#">
+                    <a class="header__nav-link" href="#top">
                         {localization.nav.industries.header[$lang]}
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
                             <path d="M10.6735 7.16602L8.50688 9.49935L6.34021 7.16602" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -51,15 +47,10 @@
                 </div>
             </nav>
             <div class="header__right">
-                <a class="header__log-in" href="tel:+498945203680">
-                    <span>{localization.nav.contact.call[$lang]}</span>
-                    <span>{localization.nav.contact.freeConsultations[$lang]}</span>
-                </a>
-                <a href="#finance-contact" class="lpv3-btn lpv3-btn--filled" style="white-space: nowrap;">{localization.nav.contact.bookDemo[$lang]}</a>
-                
+                <a href="#finance-contact" class="lpv3-btn lpv3-btn--filled w-[140px]" style="white-space: nowrap;">{localization.nav.startNow[$lang]}</a>
                 <LangButton />
 
-                <button class="header__nav-opener" bind:this={navOpenerEl}>
+                <button class="header__nav-opener" aria-label="Open navigation menu" bind:this={burgerMenu} >
                     <span></span>
                 </button>
             </div>
