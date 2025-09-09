@@ -1,60 +1,64 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
+  import Swiper from 'swiper';
+  import { Autoplay } from 'swiper/modules';
   import Navbar from '$lib/components/navbar.svelte';
   import Form from '$lib/components/form.svelte';
   import Footer from '$lib/components/footer.svelte';
   import { lang } from '$lib/stores/language';
-  import localization from '$lib/localizations/restaurants.json';
+  import localizationJSON from '$lib/localizations/restaurants.json';
+  import localizationGlobalJSON from '$lib/localizations/global.json';
+
+  // stops typescript complains
+  const localization = localizationJSON as any;
+  const localizationGlobal = localizationGlobalJSON as any;
 
   onMount(() => {
-    // ✅ Copy stylesheets into document.head
-    document.querySelectorAll('link[rel="stylesheet"], style').forEach(node => {
-    document.head.appendChild(node.cloneNode(true));
+    const swiper = new Swiper('.lpv3-partners-section__slider', {
+        slidesPerView: 'auto',
+        loop: true,
+        spaceBetween: 10,
+        speed: 1000,
+        autoplay: {
+            delay: 0, 
+            disableOnInteraction: false, 
+            reverseDirection: false, // Slide right-to-left
+        },
+        modules: [Autoplay], 
     });
 
-    // Convert <noscript> fallback images
-    document.querySelectorAll('noscript').forEach(ns => {
-        const wrapper = document.createElement('div');
-        wrapper.innerHTML = ns.innerHTML;
-        ns.replaceWith(...wrapper.childNodes); // Replace <noscript> with its child <img>
-    });
-
-    // Set real src for lazy-loaded images
-    document.querySelectorAll('img[data-lazy-src]').forEach(img => {
-    const lazySrc = img.getAttribute('data-lazy-src');
-    if (lazySrc) img.setAttribute('src', lazySrc);
-    });
-
-    // === Add accordion click listeners ===
-    const listeners = [];
-    document.querySelectorAll('.lpv3-faq-accordion__button').forEach(btn => {
+    const accordionButtons: { btn: HTMLButtonElement; handler: () => void }[] = [];
+    document.querySelectorAll<HTMLButtonElement>('.lpv3-faq-accordion__button').forEach(btn => {
         const handler = () => {
-            const accordion = btn.closest('.lpv3-faq-accordion');
-            const content = accordion.querySelector('.lpv3-faq-accordion__content');
+            const accordion = btn.closest('.lpv3-faq-accordion') as HTMLDivElement;
+            const content = accordion.querySelector('.lpv3-faq-accordion__content') as HTMLDivElement;
 
             accordion.classList.toggle('active');
-
             if (accordion.classList.contains('active')) {
-            content.style.marginTop = '10px';
-            content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.marginTop = '10px';
+                content.style.maxHeight = content.scrollHeight + 'px';
             } else {
-            content.style.marginTop = '0px';
-            content.style.maxHeight = null;
+                content.style.marginTop = '0px';
+                content.style.maxHeight = '';
             }
         }
         btn.addEventListener('click', handler);
-        listeners.push({ btn, handler });
+        accordionButtons.push({ btn, handler });
     });
    
-    // Cleanup function runs when component is destroyed
     return () => {
-        listeners.forEach(({ btn, handler }) => {
-        btn.removeEventListener('click', handler);
+        swiper.destroy(true, true);
+        accordionButtons.forEach(({ btn, handler }) => {
+            btn.removeEventListener('click', handler);
         });
     };
 });
 </script>
 
+<svelte:head>
+    <link data-minify="1" rel="stylesheet" id="swiper-style-css" href="https://newo.ai/wp-content/cache/min/1/wp-content/themes/newo/assets/css/swiper-bundle.min.css?ver=1757336033" media="all">
+    <script id="swiper-js-js" data-rocket-defer="" src="https://newo.ai/wp-content/themes/newo/assets/js/swiper-bundle.min.js?ver=1757417536" data-rocket-status="executed"></script>
+</svelte:head>
 
    <div id="SITE_CONTAINER">
         <style id="STYLE_OVERRIDES_ID">
@@ -108,7 +112,7 @@
                     </div>
                     <div class="lpv3-pricing-section__form-row-error"></div> -->
                     <div class="block">
-                        <a class="lpv3-btn w-full" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
+                        <a class="lpv3-btn w-full" href="#finance-contact">{localizationGlobal.testNow[$lang]}</a>
                     </div>
                 </div>
             </div>
@@ -121,7 +125,7 @@
                     </div>
                     <div class="lpv3-pricing-section__form-row-error"></div> -->
                     <div class="block">
-                        <a class="lpv3-btn w-full" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
+                        <a class="lpv3-btn w-full" href="#finance-contact">{localizationGlobal.testNow[$lang]}</a>
                     </div>
                 </div>
             </div>
@@ -132,109 +136,112 @@
 
 <section class="lpv3 lpv3-partners-section">
     <div class="lpv3-container">
-                    <div class="lpv3-partners-section__title">{localization.hero.partnerships[$lang]}</div>
-                            <div class="lpv3-partners-section__slider lp2-brands__slider">
-                <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/6ae255c2-da3e-42be-8f1c-d23fd1c24180.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/9bf68d10-eb41-41ba-b798-14bddfb1d28b.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/c350cf01-a786-45e3-a3fb-a0a4d20e8344.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/992aa0fb-a77a-4840-93d3-bbfeb44a3007.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/248ae93b-5d2e-4488-80dd-3e4cb122d491.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/949f3db4-f64e-45fe-bdbd-db1325bcb78b.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/89d1fa85-3bb1-4a75-b895-dfd24befbefc.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/07e19fce-512b-477b-aef1-fd4f3a7d24c4.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/s-blob-v1-IMAGE-_W72YM7bNck.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/s-blob-v1-IMAGE-ASqks44tQk8.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/s-blob-v1-IMAGE-cx8DGWSUJEw.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/s-blob-v1-IMAGE-dXHRx6GTufk.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/s-blob-v1-IMAGE-dZvALp35WA4.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="/images/s-blob-v1-IMAGE-gxHmx9rrrxU.png" alt="">
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-jM5fnI_NOfk.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-jM5fnI_NOfk.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-mK6A74eeCV0.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-mK6A74eeCV0.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-Oa1ndDbMhwU.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-Oa1ndDbMhwU.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-Q4lct1Qv3qA.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-Q4lct1Qv3qA.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-syPdYB-kKh4.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-syPdYB-kKh4.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-V0J4c5pDLVM.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-V0J4c5pDLVM.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-vMEf1Wm36oo-1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-vMEf1Wm36oo-1.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-XB6ooYBjuF8.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-XB6ooYBjuF8.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-yoX6tjbhtPw.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-yoX6tjbhtPw.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/08/aircody-e1723594202456.jpeg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/08/aircody-e1723594202456.jpeg" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/11/logo_emplorium.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/11/logo_emplorium.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/11/FullLogo_Transparent_NoBuffer-1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/11/FullLogo_Transparent_NoBuffer-1.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/11/Logo-SC.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/11/Logo-SC.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/11/rd.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/11/rd.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2025/01/AI-Hosts-Logo.fw_-1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2025/01/AI-Hosts-Logo.fw_-1.png" alt=""></noscript>
-                        </div>
-                                            <div class="swiper-slide">
-                            <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2025/03/CRA-Logo-1.jpg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2025/03/CRA-Logo-1.jpg" alt=""></noscript>
-                        </div>
-                                    </div>
+        <div class="lpv3-partners-section__title">{localization.hero.partnerships[$lang]}</div>
+        <div class="lpv3-partners-section__slider lp2-brands__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/6ae255c2-da3e-42be-8f1c-d23fd1c24180.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/9bf68d10-eb41-41ba-b798-14bddfb1d28b.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/c350cf01-a786-45e3-a3fb-a0a4d20e8344.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/992aa0fb-a77a-4840-93d3-bbfeb44a3007.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/248ae93b-5d2e-4488-80dd-3e4cb122d491.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/949f3db4-f64e-45fe-bdbd-db1325bcb78b.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/89d1fa85-3bb1-4a75-b895-dfd24befbefc.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/07e19fce-512b-477b-aef1-fd4f3a7d24c4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/s-blob-v1-IMAGE-_W72YM7bNck.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/s-blob-v1-IMAGE-ASqks44tQk8.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/s-blob-v1-IMAGE-cx8DGWSUJEw.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/s-blob-v1-IMAGE-dXHRx6GTufk.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/s-blob-v1-IMAGE-dZvALp35WA4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="/images/s-blob-v1-IMAGE-gxHmx9rrrxU.png" alt="">
+                </div>
+
+
+
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-jM5fnI_NOfk.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-mK6A74eeCV0.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-Oa1ndDbMhwU.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-Q4lct1Qv3qA.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-syPdYB-kKh4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-V0J4c5pDLVM.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-vMEf1Wm36oo-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-XB6ooYBjuF8.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/s-blob-v1-IMAGE-yoX6tjbhtPw.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/08/aircody-e1723594202456.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/11/logo_emplorium.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/11/FullLogo_Transparent_NoBuffer-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/11/Logo-SC.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2024/11/rd.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2025/01/AI-Hosts-Logo.fw_-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img decoding="async" src="https://newo.ai/wp-content/uploads/2025/03/CRA-Logo-1.jpg" alt="">
+                </div>
             </div>
-            </div>
+        </div>
+    </div>
 </section>
 
 
 <section class="lpv3 lpv3-video-section">
     <div class="lpv3-container">
         <div class="lpv3-video-section__inner">
-            <iframe loading="lazy" width="690" height="388" src="about:blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.youtube.com/embed/Jar2rQRtM58?si=RkTlAozl5wAnHCAu"></iframe><noscript><iframe width="690" height="388" src="https://www.youtube.com/embed/Jar2rQRtM58?si=RkTlAozl5wAnHCAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></noscript>            
+            <iframe width="690" height="388" src="https://www.youtube.com/embed/Jar2rQRtM58?si=RkTlAozl5wAnHCAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>         
         </div>
     </div>
 </section>
@@ -256,7 +263,7 @@
     <div class="lpv3-container">
         <div class="lpv3-video-preview-section__inner">
             <div class="lpv3-video-preview-section__video">
-                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg" alt=""></noscript>
+                <div><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg" alt=""></div>
             </div>
             <div class="lpv3-video-preview-section__content quotes">
                 <h2>{localization.facts.explanation[$lang]}</h2>
@@ -345,9 +352,10 @@
             </div>
             <div class="lpv3-pricing-section__form-row-error"></div>
             <div class="block px-[10%]">
-                <a class="lpv3-btn w-full" href="#finance-contact">Book A Demo</a>
+                    <a class="lpv3-btn w-full" href="#finance-contact">{localizationGlobal.testNow[$lang]}</a>
             </div>
         </div>
+    </div>
 </section>
 
 
@@ -389,7 +397,7 @@
             </div>
             <div class="lpv3-pricing-section__form-row-error"></div>
             <div class="block px-[10%]">
-                <a class="lpv3-btn w-full" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
+                <a class="lpv3-btn w-full" href="#finance-contact">{localizationGlobal.testNow[$lang]}</a>
             </div>
         </div>
     </div>
@@ -412,7 +420,7 @@
         <div class="lpv3-pricing-section__row">
             <div class="lpv3-pricing-section__content">
                 <h2>{localization.revenue.misc.pricesHeader[$lang]}</h2>
-                <a class="lpv3-btn" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
+                <a class="lpv3-btn" href="#finance-contact">{localizationGlobal.testNow[$lang]}</a>
             </div>
             <div class="lpv3-pricing-section__prices">
                 <h2 class="title title--02">$99/mo</h2>
@@ -429,7 +437,7 @@
                 <p>{localization.reviews[0].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_woman_restaura_15d99b0e-27a3-4a35-abf7-f35e21a6d460_2.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_woman_restaura_15d99b0e-27a3-4a35-abf7-f35e21a6d460_2.png" alt="">
+                <div><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_woman_restaura_15d99b0e-27a3-4a35-abf7-f35e21a6d460_2.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -444,7 +452,7 @@
                 <p>{localization.reviews[1].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_woman_restaurant_man_6944f8ba-69fe-4ee2-afe5-5b5f656b1bef_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_woman_restaurant_man_6944f8ba-69fe-4ee2-afe5-5b5f656b1bef_1.png" alt=""></noscript>
+                <div><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_woman_restaurant_man_6944f8ba-69fe-4ee2-afe5-5b5f656b1bef_1.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -459,7 +467,7 @@
                 <p>{localization.reviews[2].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_asian_woman_restaura_bbd1bd27-c842-4c50-9939-82748eecb159_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_asian_woman_restaura_bbd1bd27-c842-4c50-9939-82748eecb159_1.png" alt=""></noscript>
+                <div><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_asian_woman_restaura_bbd1bd27-c842-4c50-9939-82748eecb159_1.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -474,7 +482,7 @@
                 <p>{localization.reviews[3].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_man_restaurant_manag_082daff0-2bb0-446f-904e-b3f168ce53e8_2.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_man_restaurant_manag_082daff0-2bb0-446f-904e-b3f168ce53e8_2.png" alt=""></noscript>
+                <div><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_man_restaurant_manag_082daff0-2bb0-446f-904e-b3f168ce53e8_2.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -489,7 +497,7 @@
                 <p>{localization.reviews[4].author[$lang]}</p>
             </div>
             <div class="lpv3-about-person__image">
-                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_man_restaurant_afddf12d-62cd-494e-a9f2-2e20083da025_1.png"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_man_restaurant_afddf12d-62cd-494e-a9f2-2e20083da025_1.png" alt=""></noscript>
+                <div><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/anyanism_realistic_portrait_of_a_smiling_black_man_restaurant_afddf12d-62cd-494e-a9f2-2e20083da025_1.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -544,7 +552,7 @@
             </div>
             <div class="lpv3-pricing-section__form-row-error"></div>
             <div class="block px-[10%]">
-                <a class="lpv3-btn w-full" href="#finance-contact">{localization.reusableUI.bookDemoBtn[$lang]}</a>
+                <a class="lpv3-btn w-full" href="#finance-contact">{localizationGlobal.testNow[$lang]}</a>
             </div>
         </div>
     </div>
@@ -555,7 +563,7 @@
     <div class="lpv3-container">
         <div class="lpv3-video-preview-section__inner">
             <div class="lpv3-video-preview-section__video">
-                 <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg" alt=""></noscript>
+                 <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg"><img decoding="async" src="https://newo.ai/wp-content/uploads/2024/12/Rectangle-354-1.jpg" alt="">
             </div>
             <div class="lpv3-video-preview-section__content quotes">
                 <h2>{localization.featureInfo2.explanation[$lang]}</h2>
@@ -845,81 +853,8 @@
 </section>
 
 
-<div class="lpv3-adrian-form-popups--trigger lpv3 lpv3-modal-window" data-modal-name="" data-action="call">
-    <div class="lpv3-modal-window__background lpv3-modal-window__close--trigger"></div>
-    <div class="lpv3-modal-window__container">
-        <button type="button" class="lpv3-modal-window__close lpv3-modal-window__close--trigger lpv3-btn--reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M17.625 19.4375L0 1.8125L1.82813 0L19.4531 17.625L17.625 19.4375ZM1.82813 19.4375L0 17.625L17.625 0L19.4531 1.8125L1.82813 19.4375Z" fill="black"></path>
-            </svg>
-        </button>
-        <div class="book-modal-step-1 book-modal-step-3">
-            <div class="book-modal-step-1__image">
-                <img decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://newo.ai/wp-content/uploads/2025/01/Group-16.jpg"><noscript><img decoding="async" src="https://newo.ai/wp-content/uploads/2025/01/Group-16.jpg" alt=""></noscript>
-            </div>
-            <div class="book-modal-step-1__content">
-                <h2>I’m Adrian, a Newo AI�Consultant.</h2>
-                <p><strong>Want to test me?</strong></p>
-                <p>Enter your phone number below and choose how you want to be contacted</p>
-                <div class="book-modal-step-1__forms">
-                    <div class="book-modal-step-1__form book-modal-step-1__form--trigger phone-mask--trigger" data-action="call" data-message="The user wants to speak with you and see you in action. Please call him on this number xxx and say: Hi! I’m Adrian, the AI consultant from Newo. Were you planning to test me out? I’m ready! I can tell you all about Newo AI agents, create an AI agent for your business in just 3 minutes, or book a demo with my human colleagues… Where would you like to start? ">
-                        <input id="book-modal-step-1__phone-99" class="lpv3-input book-modal-step-1__form-phone--trigger" type="tel" placeholder="222 333 4444">
-                        <button type="button" class="lpv3-btn lpv3-btn--filled" data-utms={JSON.stringify({ utm1: 'test-me', utm2: 'restaurant' })}>Get AI call</button>
-                        <div class="book-modal-step-1__form-error"></div>
-                        <p style="font-size:10px;text-align:center;">I agree to be contacted by a Newo AI Agent</p>
-                    </div>
-                    <div class="book-modal-step-1__form book-modal-step-1__form--trigger book-modal-step-1__form--hide" data-action="text" data-message="The user wants to chat with you and see you in action. Please send them an SMS to this number with the greeting: Hi! I’m Adrian, the AI consultant from Newo. I can tell you all about Newo AI agents, create an AI agent for your business in just 3 minutes, or book a demo with my human colleagues… Where would you like to start? ">
-                        <input id="book-modal-step-1__phone-5" class="lpv3-input book-modal-step-1__form-phone--trigger phone-mask--trigger" type="tel" placeholder="222 333 4444">
-                        <button type="button" class="lpv3-btn lpv3-btn--filled" data-utms={JSON.stringify({ utm1: 'test-me', utm2: 'restaurant' })}>Text Me</button>
-                        <div class="book-modal-step-1__form-error"></div>
-                        <p style="font-size:10px;text-align:center;">I agree to be contacted by a Newo AI Agent</p>
-                    </div>
-                </div>
-                <button type="button" class="lpv3-btn--reset book-modal-step-1__form-toggle book-modal-step-1__form-toggle--trigger" data-button-toggle-text="I prefer to communicate over the phone">I prefer to communicate via SMS</button>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="lpv3 lpv3-modal-window" data-modal-name="book-modal-step-4">
-    <div class="lpv3-modal-window__background lpv3-modal-window__close--trigger"></div>
-    <div class="lpv3-modal-window__container">
-        <button type="button" class="lpv3-modal-window__close lpv3-modal-window__close--trigger lpv3-btn--reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M17.625 19.4375L0 1.8125L1.82813 0L19.4531 17.625L17.625 19.4375ZM1.82813 19.4375L0 17.625L17.625 0L19.4531 1.8125L1.82813 19.4375Z" fill="black"></path>
-            </svg>
-        </button>
-        <div class="lpv3-modal-window__content">
-            <div class="book-modal-step-2">
-                <h2>Check your text messages.</h2>
-                <p>The AI employee messaged you—please respond</p>
-                <div class="book-modal-step-2__buttons">
-                    <button type="button" class="lpv3-btn lpv3-btn--filled lpv3-modal-window__close--trigger">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="lpv3 lpv3-modal-window" data-modal-name="book-modal-step-5">
-    <div class="lpv3-modal-window__background lpv3-modal-window__close--trigger"></div>
-    <div class="lpv3-modal-window__container">
-        <button type="button" class="lpv3-modal-window__close lpv3-modal-window__close--trigger lpv3-btn--reset">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M17.625 19.4375L0 1.8125L1.82813 0L19.4531 17.625L17.625 19.4375ZM1.82813 19.4375L0 17.625L17.625 0L19.4531 1.8125L1.82813 19.4375Z" fill="black"></path>
-            </svg>
-        </button>
-        <div class="lpv3-modal-window__content">
-            <div class="book-modal-step-2">
-                <h2>Check your phone</h2>
-                <p>Our AI employee is calling you—please talk to him</p>
-                <div class="book-modal-step-2__buttons">
-                    <button type="button" class="lpv3-btn lpv3-btn--filled lpv3-modal-window__close--trigger">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>                            </div>
+                            </div>
                         </div>
                     </main>
                     <div id="soapAfterPagesContainer" class="page-without-sosp page-without-sosp">
@@ -929,7 +864,6 @@
                             </div>
                         </div>
                     </div>
-                    <script type="rocketlazyloadscript" data-rocket-src="https://www.youtube.com/iframe_api" data-rocket-defer="" defer=""></script>
                     <Footer />     
                     </div>
             </div>
