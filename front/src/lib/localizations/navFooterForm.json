@@ -28,20 +28,11 @@
                 }
             }
         },
-        "contact": {
-            "call": {
-                "en": "CALL 24/7: +49 89 45203680",
-                "de": "24/7 ERREICHBAR: +49 89 45203680"
-            },
-            "freeConsultations": {
-                "en": "FREE CONSULTATIONS",
-                "de": "KONSTENLOSE BERATUNG"
-            },
-            "bookDemo": {
-                "en": "BOOK A DEMO",
-                "de": "DEMO BUCHEN"
-            }
+        "startNow": {
+            "en": "START NOW",
+            "de": "JETZT STARTEN"
         }
+        
     },
     "footer": {
         "industries": {

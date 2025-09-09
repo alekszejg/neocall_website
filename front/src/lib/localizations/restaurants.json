@@ -1,10 +1,4 @@
 {
-    "reusableUI": {
-        "bookDemoBtn": {
-            "en": "BOOK A DEMO",
-            "de": "DEMO BUCHEN"
-        }
-    },
     "hero": {
         "header": {
             "en": "Create Your Restaurant AI Host",
@@ -578,8 +572,8 @@
                     "de": "Wie fange ich mit dem KI-Rezeptionisten an?"
                 },
                 "a": {
-                    "en": "Just click \"BOOK A DEMO\" on our website and fill out the contact form. We will reach you soon.",
-                    "de": "Klicken Sie einfach auf \"DEMO BUCHEN\" auf unserer Website und füllen Sie das Kontaktformular aus. Wir melden uns in Kürze bei Ihnen."
+                    "en": "Just click \"START 14-DAY FREE TRIAL\" on our website and fill out the contact form. We will reach you soon.",
+                    "de": "Klicken Sie einfach auf \"JETZT 14 TAGE KOSTENLOS TESTEN\" auf unserer Website und füllen Sie das Kontaktformular aus. Wir melden uns in Kürze bei Ihnen."
                 }
             }
         ]
