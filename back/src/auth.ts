@@ -6,7 +6,7 @@ import path from 'path';
 //const TOKEN_PATH = path.resolve(__dirname, 'token.json');
 const TOKEN_PATH = '/app/src/token.json';
 
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
+dotenv.config({ path: path.resolve(__dirname, '../.env.neocall') });
 
 interface TokenData {
     access_token: string;
