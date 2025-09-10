@@ -26,4 +26,5 @@ services:
 
 networks:
   neocall_net:
+    name: neocall_net 
     driver: bridge
