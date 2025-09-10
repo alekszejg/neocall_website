@@ -63,8 +63,23 @@
   transition: all 0.3s ease;
 }
 
+/* Contact form override */
 form .formError {
+  margin-top: 1px;
   color: red;
+}
+
+form div.finance-contact__form-row input.red-border {
+  border: 2px solid red;
+  border-radius: 7px;
+}
+
+.finance-contact__form-wrapper h2.title.title--02 {
+  letter-spacing: 0px;
+}
+
+.finance-contact__form-row input.wpcf7-form-control.wpcf7-submit {
+  letter-spacing: 1px;
 }
 
 /* Industries partners swiper override/fix */
