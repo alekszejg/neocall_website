@@ -111,8 +111,8 @@
                 "de": "E-Mail*"
             },
             "comment": {
-                "en": "Comment*",
-                "de": "Kommentar*"
+                "en": "Comment",
+                "de": "Kommentar"
             }
         },
         "btnText": {
@@ -131,16 +131,38 @@
         },
         "errors": {
             "name": {
-                "en": "Name cannot exceed 50 characters.",
-                "de": "Der Name darf 50 Zeichen nicht überschreiten."
+                "length": {
+                    "en": "Name cannot exceed 50 characters.",
+                    "de": "Der Name darf 50 Zeichen nicht überschreiten."
+                },
+                "required": {
+                    "en": "Name is required.",
+                    "de": "Name ist erforderlich."
+                }
             },
             "email": {
-                "en": "Email cannot exceed 100 characters.",
-                "de": "Die E-Mail darf 100 Zeichen nicht überschreiten."
+                "length": {
+                    "en": "Email cannot exceed 100 characters.",
+                    "de": "Die E-Mail darf 100 Zeichen nicht überschreiten."
+                },
+                "required": {
+                    "en": "Email is required.",
+                    "de": "E-Mail ist erforderlich."
+                },
+                "format": {
+                    "en": "Please enter a valid email address",
+                    "de": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+                },
+                "domain": {
+                    "en": "Email domain not found. Check for typos.",
+                    "de": "E-Mail-Domain nicht gefunden. Bitte auf Tippfehler prüfen."
+                }
             },
             "comment": {
-                "en": "Comment cannot exceed 500 characters.",
-                "de": "Der Kommentar darf 500 Zeichen nicht überschreiten."
+                "length": {
+                    "en": "Comment cannot exceed 500 characters.",
+                    "de": "Der Kommentar darf 500 Zeichen nicht überschreiten."
+                }
             },
             "internalErr": {
                 "en": "Unexpected error. Please try again.",
