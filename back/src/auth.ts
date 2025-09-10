@@ -3,7 +3,8 @@ import dotenv from 'dotenv';
 import fs from 'fs/promises';
 import path from 'path';
 
-const TOKEN_PATH = path.resolve(__dirname, 'token.json');
+//const TOKEN_PATH = path.resolve(__dirname, 'token.json');
+const TOKEN_PATH = '/app/src/token.json';
 
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
@@ -52,7 +53,6 @@ async function refreshToken() {
     // Print full error details
         if (err instanceof Error) {
             console.error('Error refreshing tokens:', err.message);
-            console.error(err.stack);
         } else {
             console.error('Error refreshing tokens:', err);
         }
