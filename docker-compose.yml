@@ -1,65 +1,28 @@
 version: '3.8'
 services:
-  neocall_back:
-    build:
-      context: ./back
-      dockerfile: Dockerfile
-    ports:
-      - "3001:3001"
-    volumes:
-      - ../volumes/neocall/token.json:/app/src/token.json
-    environment:
-      - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
-      - GOOGLE_SECRET=${GOOGLE_SECRET}
-      - GOOGLE_REDIRECT_URI=${GOOGLE_REDIRECT_URI}
-    networks:
-      - local
-
   neocall_front:
     build:
       context: ./front
       dockerfile: Dockerfile
+    container_name: neocall_frontend
     ports:
-    - "3000:3000"  
+      - "3000:3000"  
     networks:
       - local
 
-  certbot_onetime:
-    image: certbot/certbot:latest
+  neocall_back:
+    build:
+      context: ./back
+      dockerfile: Dockerfile
+    container_name: neocall_backend
+    ports:
+      - "3001:3001"
     volumes:
-      - /opt/certbot/conf:/etc/letsencrypt:rw
-      - /opt/certbot/www:/var/www/certbot:rw
-    command: >
-      certonly --webroot --webroot-path=/var/www/certbot
-      --email ${CERTBOT_EMAIL} --agree-tos --no-eff-email
-      -d neocall.ai
-    depends_on:
-    - neocall_front
-    - neocall_back
-    logging:
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "3"
+      - ../volumes/neocall/token.json:/app/src/token.json
+    env_file:
+      - ../env/.env.neocall
     networks:
       - local
-  
-  certbot-renew:
-    image: certbot/certbot:latest
-    volumes:
-      - /opt/certbot/conf:/etc/letsencrypt:rw
-      - /opt/certbot/www:/var/www/certbot:rw
-    depends_on:
-      - nginx
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew --webroot --webroot-path=/var/www/certbot; docker exec nginx nginx -s reload; sleep 7d; done'"
-    logging:
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "3"
-    networks:
-      - local
-
 
 networks:
   local:
