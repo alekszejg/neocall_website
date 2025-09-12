@@ -3,17 +3,13 @@ import dotenv from 'dotenv';
 import fs from 'fs/promises';
 import path from 'path';
 
-//const TOKEN_PATH = path.resolve(__dirname, 'token.json');
-const TOKEN_PATH = '/app/src/token.json';
+const NODE_MODE = process.env.NODE_MODE || 'production'; // production mode as fallback
+const IS_DEV = NODE_MODE === 'dev'; // compares with 'dev' (checks true/false)
 
-dotenv.config({ path: path.resolve(__dirname, '../.env.neocall') });
-
-interface TokenData {
-    access_token: string;
-    refresh_token: string;
-    scope: string;
-    token_type: string;
-    expiry_date: number;
+let TOKEN_PATH = '/app/src/token.json';
+if (IS_DEV) {
+    TOKEN_PATH = path.resolve(__dirname, 'token.json');
+    dotenv.config({ path: path.resolve(__dirname, '../.env.neocall') });
 }
 
 interface GoogleApiErr extends Error {
@@ -32,7 +28,11 @@ if (!GOOGLE_CLIENT_ID || !GOOGLE_SECRET || !GOOGLE_REDIRECT_URI) {
     throw new Error('Missing Google credentials in environment variables');
 }
 
-export const oAuth2Client = new google.auth.OAuth2(GOOGLE_CLIENT_ID, GOOGLE_SECRET, GOOGLE_REDIRECT_URI);
+export const oAuth2Client = new google.auth.OAuth2(
+    GOOGLE_CLIENT_ID, 
+    GOOGLE_SECRET, 
+    GOOGLE_REDIRECT_URI
+);
 
 async function getOAuthTokens() {
     const authUrl = oAuth2Client.generateAuthUrl({
